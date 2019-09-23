@@ -1,6 +1,22 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
+import {data} from '../data/data'
 const KhoaHoc = (props) => {
+  const loadData = data.map(item => {
+      return(
+        <div className="col-md-4 d-flex ftco-animate">
+        <div className="course align-self-stretch">
+          <a href="#" className="img" style={{backgroundImage: 'url(images/course-1.jpg)'}} />
+          <div className="text p-4">
+            <p className="category"><span>{item.title}</span> <span className="price">{item.price}</span></p>
+            <h3 className="mb-3"><a href="#">{item.name}</a></h3>
+            <p>{item.description}</p>
+            <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
+          </div>
+        </div>
+      </div>
+      )
+  } )
   return(
     <div>
         <Navbar/>
@@ -19,72 +35,7 @@ const KhoaHoc = (props) => {
         <section className="ftco-section">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 d-flex ftco-animate">
-                <div className="course align-self-stretch">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/course-1.jpg)'}} />
-                  <div className="text p-4">
-                    <p className="category"><span>English</span> <span className="price">$250</span></p>
-                    <h3 className="mb-3"><a href="#">English for Tommorow</a></h3>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                    <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-flex ftco-animate">
-                <div className="course align-self-stretch">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/course-2.jpg)'}} />
-                  <div className="text p-4">
-                    <p className="category"><span>Science</span> <span className="price">$250</span></p>
-                    <h3 className="mb-3"><a href="#">Computer Engineering</a></h3>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                    <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-flex ftco-animate">
-                <div className="course align-self-stretch">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/course-3.jpg)'}} />
-                  <div className="text p-4">
-                    <p className="category"><span>Business</span> <span className="price">$250</span></p>
-                    <h3 className="mb-3"><a href="#">Business Studies</a></h3>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                    <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-flex ftco-animate">
-                <div className="course align-self-stretch">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/course-4.jpg)'}} />
-                  <div className="text p-4">
-                    <p className="category"><span>English</span> <span className="price">$250</span></p>
-                    <h3 className="mb-3"><a href="#">English for Tommorow</a></h3>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                    <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-flex ftco-animate">
-                <div className="course align-self-stretch">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/course-5.jpg)'}} />
-                  <div className="text p-4">
-                    <p className="category"><span>Science</span> <span className="price">$250</span></p>
-                    <h3 className="mb-3"><a href="#">Computer Engineering</a></h3>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                    <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-flex ftco-animate">
-                <div className="course align-self-stretch">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/course-6.jpg)'}} />
-                  <div className="text p-4">
-                    <p className="category"><span>Business</span> <span className="price">$250</span></p>
-                    <h3 className="mb-3"><a href="#">Business Studies</a></h3>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                    <p><a href="#" className="btn btn-primary">Enroll now!</a></p>
-                  </div>
-                </div>
-              </div>
+                  {loadData}
             </div>
             <div className="row mt-5">
               <div className="col text-center">
