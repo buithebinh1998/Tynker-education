@@ -4,7 +4,7 @@ const Navbar = props => {
   return(
     <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div className="container">
-      <a className="navbar-brand" href="/"><i className="flaticon-university" />Genius <br /><small>University</small></a>
+      <a className="navbar-brand" href="/"><i className="flaticon-university" />TYNKER <br /><small>ĐẠI HỌC SƯ PHẠM</small></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="oi oi-menu" /> Menu
       </button>
@@ -14,8 +14,6 @@ const Navbar = props => {
           <li className={`nav-item ${props.active === "gioithieu"? 'active' : ''}`}><NavLink to = '/gioithieu' className="nav-link">Giới thiệu</NavLink></li>
           <li className={`nav-item ${props.active === "khoahoc"? 'active' : ''}`}><NavLink to = '/khoahoc' className="nav-link">Khóa học</NavLink></li>
           <li className={`nav-item ${props.active === "giaovien"? 'active' : ''}`}><NavLink to = '/giaovien' className="nav-link">Giáo viên</NavLink></li>
-          <li className="nav-item"><NavLink to = '/'  className="nav-link">Blog</NavLink></li>
-          <li className="nav-item"><NavLink to = '/' className="nav-link">Events</NavLink></li>
           <li className={`nav-item ${props.active === "lienhe"? 'active' : ''}`}><NavLink to = '/lienhe' className="nav-link">Liên hệ</NavLink></li>
           <li className="nav-item cta"><NavLink  className="nav-link"><span>Đăng ký</span></NavLink></li>
         </ul>
