@@ -8,17 +8,17 @@ export const data = [
     },
     {
         title : 'Lập trình trực quan',
-        price : '100.000 VNĐ',
+        price : '200.000 VNĐ',
         name : 'Tynker nâng cao',
-        imglink : '#',
+        imglink : 'https://i.wingur.com/iM5H.png',
         description: 'Khóa học lập trình trực quan nâng cao bằng Tynker cải thiện khả năng lập trình trên Tynker của học sinh. Khóa học cung cấp những kiến thức nâng cao hơn về các khối lệnh và giúp học sinh tạo được sản phẩm phức tạp.'
     },
     {
         title : 'Lập trình trực quan',
-        price : '200.000 VNĐ',
+        price : '500.000 VNĐ',
         name : 'Tynker Minecraft',
-        imglink : '#',
-        description: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name'
+        imglink : 'https://i.wingur.com/ioO4.png',
+        description: 'Khóa học lập trình trực quan Tynker Minecraft hướng dẫn học sinh tạo và triển khai các mod Minecraft và tiện ích bổ sung hoàn toàn miễn phí. Khóa học giúp học sinh thành thạo việc thiết kế giao diện Minecraft bằng Tynker. '
     }
 ]
 

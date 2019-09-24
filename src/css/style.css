@@ -4588,6 +4588,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  text-transform: initial !important;
 }
 
 .navbar-brand:hover,
@@ -13443,3 +13444,4 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+

@@ -7,12 +7,12 @@ const TrangChu = props => {
     <div>
       <Navbar active = "trangchu"/>
   {/* END nav */}
-  <div className="hero-wrap" style={{backgroundImage: 'url("../images/bg_1.jpg")', backgroundAttachment: 'fixed'}}>
+  <div className="hero-wrap" style={{backgroundImage: 'url("https://i.wingur.com/Eznw.jpg")', backgroundAttachment: 'fixed'}}>
     <div className="overlay" />
     <div className="container">
       <div className="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-        <div className="col-md-8 ftco-animate text-center">
-          <h1 className="mb-4">Học Lập Trình Trực Quan Với Tynker</h1>
+        <div className="col-md-10 ftco-animate text-center">
+          <h1 className="mb-4">Học Lập Trình Trực Quan <br/> Theo Định Hướng STEAM <br/> Với Tynker</h1>
           <p><a href="/" className="btn btn-primary px-4 py-3">Đăng Ký</a> <NavLink to="/khoahoc" className="btn btn-secondary px-4 py-3">Xem Khóa Học</NavLink></p>
         </div>
       </div>

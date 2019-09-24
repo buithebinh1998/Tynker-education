@@ -1,6 +1,5 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import Logo from '../images/logo.png'
 const Footer = () =>{
     return(
     <div>
@@ -10,12 +9,10 @@ const Footer = () =>{
       <div className="row">
         <div className="col-md-4">
           <div className="ftco-footer-widget mb-4">
-            <h2><NavLink className="navbar-brand" to="/"><img src = {Logo} alt ="Logo" style ={{width: '50px'}} />TYNKER <br /><small>ĐẠI HỌC SƯ PHẠM</small></NavLink></h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2><NavLink className="navbar-brand" to="/"><img src = "https://i.wingur.com/i4Zo.png" alt ="Logo" style ={{width: '50px'}} />TynkerEdu <br /><span style={{fontSize: 16+'px',color:'yellow'}}>ĐẠI HỌC SƯ PHẠM</span></NavLink></h2>
+            <p align="justify">Trang web giáo dục hỗ trợ việc học tập Tynker được phát triển bởi nhóm sinh viên trường Đại Học Sư Phạm.</p>
             <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li className="ftco-animate"><a href="/"><span className="icon-twitter" /></a></li>
-              <li className="ftco-animate"><a href="/"><span className="icon-facebook" /></a></li>
-              <li className="ftco-animate"><a href="/"><span className="icon-instagram" /></a></li>
+              <li className="ftco-animate"><a href="https://www.facebook.com/tynker.edu/" target="_blank"><span className="icon-facebook" /></a></li>
             </ul>
           </div>
         </div>
@@ -46,9 +43,9 @@ const Footer = () =>{
       </div>
       <div className="row">
         <div className="col-md-12 text-center">
-          <p>{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-            Copyright © All rights reserved | This template is made with <i className="icon-heart" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
+          <p>
+            Copyright © All rights reserved by Bui The Binh and Nguyen Minh Anh Khoi | Supported with <i className="icon-heart" aria-hidden="true" /> by Tran Anh Tuan
+          </p>
         </div>
       </div>
     </div>
