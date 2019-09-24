@@ -3,7 +3,7 @@ import Navbar from '../component/Navbar'
 const TrangChu = props => {
   return(
     <div>
-      <Navbar />
+      <Navbar active = "trangchu"/>
   {/* END nav */}
   <div className="hero-wrap" style={{backgroundImage: 'url("../images/bg_1.jpg")', backgroundAttachment: 'fixed'}}>
     <div className="overlay" />

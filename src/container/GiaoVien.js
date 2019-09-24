@@ -3,7 +3,7 @@ import Navbar from '../component/Navbar'
 const GiaoVien = (props) => {
 return (
     <div>
-      <Navbar/>
+      <Navbar active = 'giaovien'/>
       {/* END nav */}
       <div className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url("images/bg_2.jpg")', backgroundAttachment: 'fixed'}}>
         <div className="overlay" />
