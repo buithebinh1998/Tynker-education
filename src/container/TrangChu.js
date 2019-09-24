@@ -5,7 +5,7 @@ const TrangChu = props => {
     <div>
       <Navbar />
   {/* END nav */}
-  <div className="hero-wrap" style={{backgroundImage: 'url("images/bg_1.jpg")', backgroundAttachment: 'fixed'}}>
+  <div className="hero-wrap" style={{backgroundImage: 'url("../images/bg_1.jpg")', backgroundAttachment: 'fixed'}}>
     <div className="overlay" />
     <div className="container">
       <div className="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">

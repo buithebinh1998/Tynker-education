@@ -10,14 +10,14 @@ const Navbar = props => {
       </button>
       <div className="collapse navbar-collapse" id="ftco-nav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active"><NavLink to = '/' className="nav-link">Trang Chủ</NavLink></li>
-          <li className="nav-item"><NavLink to = '/' className="nav-link">About</NavLink></li>
+          <li className="nav-item active"><NavLink to = '/' className="nav-link">Trang chủ</NavLink></li>
+          <li className="nav-item"><NavLink to = '/gioithieu' className="nav-link">Giới thiệu</NavLink></li>
           <li className="nav-item"><NavLink to = '/khoahoc' className="nav-link">Khóa học</NavLink></li>
-          <li className="nav-item"><NavLink to = '/' className="nav-link">Teacher</NavLink></li>
+          <li className="nav-item"><NavLink to = '/giaovien' className="nav-link">Giáo viên</NavLink></li>
           <li className="nav-item"><NavLink to = '/'  className="nav-link">Blog</NavLink></li>
           <li className="nav-item"><NavLink to = '/' className="nav-link">Events</NavLink></li>
-          <li className="nav-item"><NavLink to = '/' className="nav-link">Contact</NavLink></li>
-          <li className="nav-item cta"><NavLink  className="nav-link"><span>Apply Now!</span></NavLink></li>
+          <li className="nav-item"><NavLink to = '/lienhe' className="nav-link">Liên hệ</NavLink></li>
+          <li className="nav-item cta"><NavLink  className="nav-link"><span>Đăng ký</span></NavLink></li>
         </ul>
       </div>
     </div>
