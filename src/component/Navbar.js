@@ -1,10 +1,11 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import Logo from '../images/logo.png'
 const Navbar = props => {
   return(
     <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div className="container">
-      <a className="navbar-brand" href="/"><i className="flaticon-university" />TYNKER <br /><small>ĐẠI HỌC SƯ PHẠM</small></a>
+      <NavLink className="navbar-brand" to="/"><img src = {Logo} alt ="Logo" style ={{width: '50px'}} />TYNKER <br /><small>ĐẠI HỌC SƯ PHẠM</small></NavLink>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="oi oi-menu" /> Menu
       </button>

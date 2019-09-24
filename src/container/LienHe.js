@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
+import {NavLink} from 'react-router-dom'
 const LienHe = (props) =>{
     return (
         <div>
@@ -11,7 +12,7 @@ const LienHe = (props) =>{
             <div className="container">
               <div className="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                 <div className="col-md-8 ftco-animate text-center">
-                  <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Trang chủ</a></span> <span>Liên hệ</span></p>
+                  <p className="breadcrumbs"><span className="mr-2"><NavLink to = "/">Trang chủ</NavLink></span> <span>Liên hệ</span></p>
                   <h1 className="mb-3 bread">LIÊN HỆ</h1>
                 </div>
               </div>
@@ -34,7 +35,7 @@ const LienHe = (props) =>{
                   <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
                 </div>
                 <div className="col-md-3">
-                  <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                  <p><span>Website</span> <a href="/">yoursite.com</a></p>
                 </div>
               </div>
               <div className="row block-9">

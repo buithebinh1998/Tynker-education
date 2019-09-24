@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
+import {NavLink} from 'react-router-dom'
 const GioiThieu = (props) => {
     return (
         <div>
@@ -11,7 +12,7 @@ const GioiThieu = (props) => {
             <div className="container">
               <div className="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                 <div className="col-md-8 ftco-animate text-center">
-                  <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Trang chủ</a></span> <span>Giới thiệu</span></p>
+                  <p className="breadcrumbs"><span className="mr-2"><NavLink to = "/">Trang chủ</NavLink></span> <span>Giới thiệu</span></p>
                   <h1 className="mb-3 bread">GIỚI THIỆU</h1>
                 </div>
               </div>

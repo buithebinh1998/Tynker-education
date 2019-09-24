@@ -1,15 +1,16 @@
 import React from 'react'
-
+import {NavLink} from 'react-router-dom'
+import Logo from '../images/logo.png'
 const Footer = () =>{
     return(
     <div>
     <footer className="ftco-footer ftco-bg-dark ftco-section img" style={{backgroundImage: 'url(images/bg_2.jpg)', backgroundAttachment: 'fixed'}}>
     <div className="overlay" />
     <div className="container">
-      <div className="row mb-5">
+      <div className="row">
         <div className="col-md-4">
           <div className="ftco-footer-widget mb-4">
-            <h2><a className="navbar-brand" href="index.html"><i className="flaticon-university" />TYNKER <br /><small>ĐẠI HỌC SƯ PHẠM</small></a></h2>
+            <h2><NavLink className="navbar-brand" to="/"><img src = {Logo} alt ="Logo" style ={{width: '50px'}} />TYNKER <br /><small>ĐẠI HỌC SƯ PHẠM</small></NavLink></h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
               <li className="ftco-animate"><a href="/"><span className="icon-twitter" /></a></li>
@@ -23,10 +24,10 @@ const Footer = () =>{
           <div className="ftco-footer-widget mb-4 ml-md-4">
             <h2 className="ftco-heading-2">Liên kết</h2>
             <ul className="list-unstyled">
-              <li><a href="/" className="py-2 d-block">Trang chủ</a></li>
-              <li><a href="/" className="py-2 d-block">Giới thiệu</a></li>
-              <li><a href="/" className="py-2 d-block">Khóa học</a></li>
-              <li><a href="/" className="py-2 d-block">Giáo viên</a></li>
+              <li><NavLink to="/" className="py-2 d-block">Trang chủ</NavLink></li>
+              <li><NavLink to="/gioithieu" className="py-2 d-block">Giới thiệu</NavLink></li>
+              <li><NavLink to="/khoahoc" className="py-2 d-block">Khóa học</NavLink></li>
+              <li><NavLink to="/giaovien" className="py-2 d-block">Giáo viên</NavLink></li>
             </ul>
           </div>
         </div>

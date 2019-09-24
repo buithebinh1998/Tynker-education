@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
+import {NavLink} from 'react-router-dom'
 const GiaoVien = (props) => {
 return (
     <div>
@@ -11,7 +12,7 @@ return (
         <div className="container">
           <div className="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
             <div className="col-md-8 ftco-animate text-center">
-              <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Trang chủ</a></span> <span>Giáo viên</span></p>
+              <p className="breadcrumbs"><span className="mr-2"><NavLink to="/">Trang chủ</NavLink></span> <span>Giáo viên</span></p>
               <h1 className="mb-3 bread">GIÁO VIÊN</h1>
             </div>
           </div>
@@ -33,9 +34,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -52,9 +53,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -71,9 +72,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -90,9 +91,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -109,9 +110,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -128,9 +129,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -147,9 +148,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -166,9 +167,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
@@ -185,9 +186,9 @@ return (
                     <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
                     <span className="position">CSE Teacher</span>
                     <p className="ftco-social d-flex">
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
-                      <a href="#" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-twitter" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-facebook" /></a>
+                      <a href="/" className="d-flex justify-content-center align-items-center"><span className="icon-instagram" /></a>
                     </p>
                   </div>
                 </div>
