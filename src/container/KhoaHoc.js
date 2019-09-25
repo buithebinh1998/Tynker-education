@@ -1,8 +1,8 @@
 import React from 'react'
-import {data} from '../data/data'
 import {NavLink} from 'react-router-dom'
+import { dataKhoaHoc } from '../data/dataKhoaHoc'
 const KhoaHoc = (props) => {
-  const loadData = data.map(item => {
+  const loadData = dataKhoaHoc.map(item => {
       return(
         <div className="col-md-4 d-flex ftco-animate">
         <div className="course align-self-stretch">

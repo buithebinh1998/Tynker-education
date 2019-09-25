@@ -1,4 +1,4 @@
-export const data = [
+export const dataKhoaHoc = [
     {
         title : 'Lập trình trực quan',
         price : 'Miễn phí',
