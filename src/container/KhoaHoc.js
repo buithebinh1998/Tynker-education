@@ -1,7 +1,5 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
 import {data} from '../data/data'
-import Footer from '../component/Footer'
 import {NavLink} from 'react-router-dom'
 const KhoaHoc = (props) => {
   const loadData = data.map(item => {

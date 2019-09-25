@@ -15,7 +15,8 @@ const Navbar = props => {
           <li className="nav-item"><NavLink to = '/khoahoc' className="nav-link" activeClassName="nav-link-active">Khóa học</NavLink></li>
           <li className="nav-item"><NavLink to = '/giaovien' className="nav-link"activeClassName="nav-link-active" >Giáo viên</NavLink></li>
           <li className="nav-item"><NavLink to = '/lienhe' className="nav-link"activeClassName="nav-link-active" >Liên hệ</NavLink></li>
-          <li className="nav-item cta"><NavLink  className="nav-link"><span>Đăng ký</span></NavLink></li>
+          <li className="nav-item cta"><NavLink to= '/dangky' className="nav-link"><span>Đăng ký</span></NavLink></li>
+          <li className="nav-item cta"><NavLink to= '/dangnhap' className="nav-link"><span>Đăng nhập</span></NavLink></li>
         </ul>
       </div>
     </div>

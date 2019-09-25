@@ -7,6 +7,8 @@ import React from 'react';
  import GioiThieu from './container/GioiThieu'
  import LienHe from './container/LienHe'
  import Layout from './hoc/Layout'
+ import FormLoginPage from './container/FormLoginPage'
+ import FormRegisterPage from './container/FormRegisterPage'
 function App() {
   return (
     <Layout>
@@ -16,6 +18,8 @@ function App() {
       <Route path = '/giaovien' component = {GiaoVien} />
       <Route path ='/gioithieu' component = {GioiThieu} />
       <Route path ='/lienhe' component = {LienHe} />
+      <Route path ='/dangnhap' component ={FormLoginPage}/>
+      <Route path ='/dangky' component ={FormRegisterPage}/>
       </Switch>
     </Layout>
   
