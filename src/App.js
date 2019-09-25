@@ -6,16 +6,19 @@ import React from 'react';
  import GiaoVien from './container/GiaoVien'
  import GioiThieu from './container/GioiThieu'
  import LienHe from './container/LienHe'
-
+ import Layout from './hoc/Layout'
 function App() {
   return (
-    <Switch>
-      <Route path = '/' exact component ={TrangChu} />
-      <Route path = '/khoahoc' component = {KhoaHoc}/>
-      <Route path = '/giaovien' component = {GiaoVien}/>
-      <Route path ='/gioithieu' component = {GioiThieu}/>
-      <Route path ='/lienhe' component = {LienHe}/>
-    </Switch>
+    <Layout>
+        <Switch>
+      <Route path = '/' exact component ={TrangChu}  />
+      <Route path = '/khoahoc' component = {KhoaHoc} />
+      <Route path = '/giaovien' component = {GiaoVien} />
+      <Route path ='/gioithieu' component = {GioiThieu} />
+      <Route path ='/lienhe' component = {LienHe} />
+      </Switch>
+    </Layout>
+  
   )
 }
    

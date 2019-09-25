@@ -10,11 +10,11 @@ const Navbar = props => {
       </button>
       <div className="collapse navbar-collapse" id="ftco-nav">
         <ul className="navbar-nav ml-auto">
-          <li className={`nav-item ${props.active === "trangchu"? 'active' : ''}`}><NavLink to = '/' className="nav-link">Trang chủ</NavLink></li>
-          <li className={`nav-item ${props.active === "gioithieu"? 'active' : ''}`}><NavLink to = '/gioithieu' className="nav-link">Giới thiệu</NavLink></li>
-          <li className={`nav-item ${props.active === "khoahoc"? 'active' : ''}`}><NavLink to = '/khoahoc' className="nav-link">Khóa học</NavLink></li>
-          <li className={`nav-item ${props.active === "giaovien"? 'active' : ''}`}><NavLink to = '/giaovien' className="nav-link">Giáo viên</NavLink></li>
-          <li className={`nav-item ${props.active === "lienhe"? 'active' : ''}`}><NavLink to = '/lienhe' className="nav-link">Liên hệ</NavLink></li>
+          <li className="nav-item"><NavLink to = '/' exact className="nav-link" activeClassName="nav-link-active">Trang chủ</NavLink></li>
+          <li className="nav-item"><NavLink to = '/gioithieu' className="nav-link" activeClassName="nav-link-active">Giới thiệu</NavLink></li>
+          <li className="nav-item"><NavLink to = '/khoahoc' className="nav-link" activeClassName="nav-link-active">Khóa học</NavLink></li>
+          <li className="nav-item"><NavLink to = '/giaovien' className="nav-link"activeClassName="nav-link-active" >Giáo viên</NavLink></li>
+          <li className="nav-item"><NavLink to = '/lienhe' className="nav-link"activeClassName="nav-link-active" >Liên hệ</NavLink></li>
           <li className="nav-item cta"><NavLink  className="nav-link"><span>Đăng ký</span></NavLink></li>
         </ul>
       </div>

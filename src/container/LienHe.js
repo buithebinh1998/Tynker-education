@@ -1,12 +1,8 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
-import Footer from '../component/Footer'
 import {NavLink} from 'react-router-dom'
 const LienHe = (props) =>{
     return (
         <div>
-        <Navbar active = "lienhe"/>
-          {/* END nav */}
           <div className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url("images/bg_2.jpg")', backgroundAttachment: 'fixed'}}>
             <div className="overlay" />
             <div className="container">
@@ -63,8 +59,6 @@ const LienHe = (props) =>{
               </div>
             </div>
           </section>
-          
-          <Footer/>
         </div>
       );
 }

@@ -11894,6 +11894,9 @@ textarea.form-control {
   background: #3c312e;
 }
 
+.ftco-navbar-light .navbar-nav>.nav-item>a.nav-link-active{
+  color: #167ce9;
+}
 .ftco-footer {
   font-size: 16px;
 }

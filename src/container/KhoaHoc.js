@@ -21,8 +21,6 @@ const KhoaHoc = (props) => {
   } )
   return(
     <div>
-        <Navbar active = "khoahoc"/>
-        {/* END nav */}
         <div className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url("images/bg_2.jpg")', backgroundAttachment: 'fixed'}}>
           <div className="overlay" />
           <div className="container">
@@ -52,8 +50,6 @@ const KhoaHoc = (props) => {
             </div>
           </div>
         </section>
-        
-        <Footer/>
       </div>
   )
 }

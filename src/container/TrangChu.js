@@ -1,12 +1,8 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
-import Footer from '../component/Footer'
 import {NavLink} from 'react-router-dom'
 const TrangChu = props => {
   return(
     <div>
-      <Navbar active = "trangchu"/>
-  {/* END nav */}
   <div className="hero-wrap" style={{backgroundImage: 'url("https://i.wingur.com/Eznw.jpg")', backgroundAttachment: 'fixed'}}>
     <div className="overlay" />
     <div className="container">
@@ -177,10 +173,6 @@ const TrangChu = props => {
       </div>
     </div>
   </section>
-    <Footer/>
-  
-  {/* loader */}
- 
 </div>
   
   )
