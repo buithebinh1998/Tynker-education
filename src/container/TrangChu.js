@@ -110,7 +110,7 @@ const TrangChu = props => {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4 ftco-animate">
+        <div className="col-12 col-md-4 ftco-animate">
           <div className="carousel-testimony owl-carousel">
             <div className="item">
               <div className="testimony-wrap text-center">
@@ -128,7 +128,7 @@ const TrangChu = props => {
             </div>
             </div>
             </div>
-            <div className="col-md-4 ftco-animate">
+            <div className="col-12 col-md-4 ftco-animate">
           <div className="carousel-testimony owl-carousel">
             <div className="item">
               <div className="testimony-wrap text-center">
@@ -146,7 +146,7 @@ const TrangChu = props => {
             </div>
             </div>
             </div>
-            <div className="col-md-4 ftco-animate">
+            <div className="col-12 col-md-4 ftco-animate">
           <div className="carousel-testimony owl-carousel">
             <div className="item">
               <div className="testimony-wrap text-center">
