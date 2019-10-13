@@ -1,6 +1,7 @@
 import React from 'react';
 
  import { Route, Switch } from "react-router-dom"
+ import {Provider} from 'react-redux';
  import TrangChu from './container/TrangChu'
  import KhoaHoc from './container/KhoaHoc'
  import GiaoVien from './container/GiaoVien'
