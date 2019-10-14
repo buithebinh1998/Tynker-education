@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import KhoaHocContent from '../component/KhoaHocContent/KhoaHocContent'
 import { dataKhoaHoc } from '../data/dataKhoaHoc'
 const KhoaHoc = (props) => {
   const loadData = dataKhoaHoc.map(item => {
@@ -33,7 +34,7 @@ const KhoaHoc = (props) => {
         <section className="ftco-section">
           <div className="container">
             <div className="row">
-                  {loadData}
+                  <KhoaHocContent/>
             </div>
             <div className="row mt-5">
               <div className="col text-center">

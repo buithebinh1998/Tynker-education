@@ -17,7 +17,7 @@ const renderRouteContainer = (routes) => routes.map((item,idx)=>
                   : Promise.reject(new Error())
             );
           });
-           return <otherComponent/>
+           return otherComponent
          }}
          />
 )
