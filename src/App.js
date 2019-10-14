@@ -1,29 +1,38 @@
 import React from 'react';
-
- import { Route, Switch } from "react-router-dom"
- import {Provider} from 'react-redux';
- import TrangChu from './container/TrangChu'
- import KhoaHoc from './container/KhoaHoc'
- import GiaoVien from './container/GiaoVien'
- import GioiThieu from './container/GioiThieu'
- import LienHe from './container/LienHe'
- import Layout from './hoc/Layout'
- import FormLoginPage from './container/FormLoginPage'
- import FormRegisterPage from './container/FormRegisterPage'
+import { Route, Switch } from "react-router-dom"
+import Layout from './hoc/Layout'
+import Routes from './configs/Routes/Route';
+import Loader from './component/Loader/Loader';
+const renderRouteContainer = (routes) => routes.map((item,idx)=>
+  <Route key = {item.idx} 
+         exact = {item.exact} 
+         component = {item.container} 
+         path = {item.path}
+         render= {() => {
+           const otherComponent = React.lazy(() => {
+            return new Promise(resolve => setTimeout(resolve, 5 * 1000)).then(
+              () =>
+                Math.floor(Math.random() * 10) >= 4
+                  ? import(`${item.container}`)
+                  : Promise.reject(new Error())
+            );
+          });
+           return <otherComponent/>
+         }}
+         />
+)
+ 
 function App() {
   return (
-    <Layout>
+      <Layout>
+    <React.Suspense maxDuration={300} fallback = {Loader}>
         <Switch>
-      <Route path = '/' exact component ={TrangChu}  />
-      <Route path = '/khoahoc' component = {KhoaHoc} />
-      <Route path = '/giaovien' component = {GiaoVien} />
-      <Route path ='/gioithieu' component = {GioiThieu} />
-      <Route path ='/lienhe' component = {LienHe} />
-      <Route path ='/dangnhap' component ={FormLoginPage}/>
-      <Route path ='/dangky' component ={FormRegisterPage}/>
+        {renderRouteContainer(Routes)}
       </Switch>
+      </React.Suspense>
     </Layout>
-  
+    
+        
   )
 }
    

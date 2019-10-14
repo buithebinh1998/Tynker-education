@@ -16,17 +16,17 @@ import  './css/icomoon.css'
 import './css/flaticon.css'
 import './css/jquery.timepicker.css'
 import './css/style.css'
-import createStore from './createStore';
-import {Provider} from 'react-redux'
+// import createStore from './createStore';
+// import {Provider} from 'react-redux'
 
-const store = createStore();
+// const store = createStore();
 
 const app = (
-  <Provider store = {store}>
+
     <BrowserRouter>
     <App />
   </BrowserRouter>
-  </Provider>
+
   
 );
 ReactDOM.render(app , document.getElementById('root'));
