@@ -39,11 +39,6 @@ const KhoaHoc = (props) => {
             <div className="row mt-5">
               <div className="col text-center">
                 <div className="block-27">
-                  <ul>
-                    <li><a href="javascript:void(0);">&lt;</a></li>
-                    <li className="active"><span>1</span></li>
-                    <li><a href="javascript:void(0);">&gt;</a></li>
-                  </ul>
                 </div>
               </div>
             </div>

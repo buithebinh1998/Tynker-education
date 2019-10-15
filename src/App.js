@@ -2,9 +2,10 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom"
 import Layout from './hoc/Layout'
 import Routes from './configs/Routes/Route';
+import Home from './container/TrangChu'
 import Loader from './component/Loader/Loader';
 const renderRouteContainer = (routes) => routes.map((item,idx)=>
-  <Route key = {item.idx} 
+  <Route key = {idx} 
          exact = {item.exact} 
          component = {item.container} 
          path = {item.path}
@@ -21,16 +22,21 @@ const renderRouteContainer = (routes) => routes.map((item,idx)=>
          }}
          />
 )
- 
+
+ const HomeLazy = React.lazy(()=> import('./container/TrangChu'))
 function App() {
   return (
-      <Layout>
-    <React.Suspense maxDuration={300} fallback = {Loader}>
-        <Switch>
-        {renderRouteContainer(Routes)}
-      </Switch>
-      </React.Suspense>
-    </Layout>
+    <React.Suspense fallback = {<h1>Loading...</h1>}>
+        <Layout>
+    
+    <HomeLazy/>
+    <Switch>
+    {renderRouteContainer(Routes)}
+  </Switch>
+
+</Layout>
+    </React.Suspense>
+    
     
         
   )
