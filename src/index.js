@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from "react-router-dom";
 import './css/bootstrap/bootstrap-grid.css'
 import './css/bootstrap/bootstrap-reboot.css'
 import './css/css/mixins/_text-hide.css';
@@ -21,15 +20,7 @@ import './css/style.css'
 
 // const store = createStore();
 
-const app = (
-
-    <BrowserRouter>
-    <App />
-  </BrowserRouter>
-
-  
-);
-ReactDOM.render(app , document.getElementById('root'));
+ReactDOM.render(<App/> , document.getElementById('root'));
 
 
 serviceWorker.unregister();

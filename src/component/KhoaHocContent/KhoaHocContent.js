@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-const KhoaHocContent = props => {
-  const [data, setData] = React.useState([]);
+import React from "react";
+import Loader from "../Loader/Loader";
 
-  useEffect(() => {
-    axios
-      .get("http://tynkerserver.herokuapp.com/tynkerdhsp/courses")
-      .then(res => setData(res.data))
-      .catch(err => console.log(err));
-  });
+const KhoaHocContent = props => {
+  const { data, loading } = props;
+
   const renderComponent = (item, idx) => (
-    <div className="col-md-4 d-flex ftco-animate">
+    <div className="col-md-4 d-flex ftco-animate" key={idx}>
       <div className="course align-self-stretch">
         <a
           href="/"
@@ -44,7 +39,7 @@ const KhoaHocContent = props => {
   return (
     <section className="ftco-section">
       <div className="container">
-        <div className="row">{renderData(data)}</div>
+        <div className="row"> {loading ? <Loader /> : renderData(data)}</div>
         <div className="row mt-5">
           <div className="col text-center">
             <div className="block-27"></div>

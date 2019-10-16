@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./hoc/Layout";
 import Routes from "./configs/Routes/Route";
+import { BrowserRouter as Router } from "react-router-dom";
+import Loader from './component/Loader/Loader'
 const renderRouteContainer = routes =>
   routes.map((item, idx) => (
     <Route
@@ -25,11 +27,13 @@ const renderRouteContainer = routes =>
 
 function App() {
   return (
-    <React.Suspense fallback={<h1>Loading...</h1>}>
-      <Layout>
-        <Switch>{renderRouteContainer(Routes)}</Switch>
-      </Layout>
-    </React.Suspense>
+    <Router>
+      <React.Suspense fallback={Loader}>
+        <Layout>
+          <Switch>{renderRouteContainer(Routes)}</Switch>
+        </Layout>
+      </React.Suspense>
+    </Router>
   );
 }
 
