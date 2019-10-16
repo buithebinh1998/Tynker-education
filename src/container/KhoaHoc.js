@@ -7,7 +7,7 @@ import CourseContextProvider from '../contexts/CourseContext';
 import {CourseContext} from '../contexts/CourseContext';
 const KhoaHoc = props => {
   
-  console.log(CourseContext)
+  console.log(useContext(CourseContext))
   const {courses} = React.useContext(CourseContext);
   const [loading, setLoading] = React.useState(true);
   if(courses){

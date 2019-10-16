@@ -1,7 +1,9 @@
 import React, { createContext, useReducer, useEffect } from "react";
 import axios from "axios";
 import { courseReducer } from "../reducer/courses.reducers";
-export const CourseContext = createContext();
+export const CourseContext = createContext({
+  data: []
+});
 
 const CourseContextProvider = props => {
  
@@ -21,7 +23,7 @@ const CourseContextProvider = props => {
   },[course]);
 
   return (
-    <CourseContext.Provider value={data}>
+    <CourseContext.Provider value={{data}}>
       {props.children}
     </CourseContext.Provider>
   );
