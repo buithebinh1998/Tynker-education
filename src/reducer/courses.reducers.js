@@ -8,6 +8,9 @@ export const courseReducer = (state, action) => {
         ]
       case 'REMOVE_COURSE':
         return state.filter(book => book.id !== action.id);
+      
+      case  'SET':
+        return action.payload;
       default:
         return state;
     }

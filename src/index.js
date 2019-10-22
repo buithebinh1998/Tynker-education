@@ -20,7 +20,7 @@ import './css/style.css'
 
 // const store = createStore();
 
-ReactDOM.render(<App/> , document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 serviceWorker.unregister();

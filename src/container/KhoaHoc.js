@@ -1,33 +1,31 @@
-import React, { useEffect,useContext } from "react";
+import React, { useEffect} from "react";
 import KhoaHocContent from "../component/KhoaHocContent/KhoaHocContent";
 import axios from "axios";
 import Introduce from "../component/Introduce/Introduce";
 
-import CourseContextProvider from '../contexts/CourseContext';
-import {CourseContext} from '../contexts/CourseContext';
 const KhoaHoc = props => {
-  
-  console.log(useContext(CourseContext))
-  const {courses} = React.useContext(CourseContext);
+  const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
-  if(courses){
-    setLoading(false);
-  }
-  // useEffect(() => {
-  //   axios
-  //     .get("http://tynkerserver.herokuapp.com/tynkerdhsp/courses")
-  //     .then(res => {
-  //       setData(res.data);
-  //       setLoading(false);
-  //     })
-  //     .catch(err => console.log(err));
-  // });
-  console.log(courses)
+
+  useEffect(() => {
+    let isSubscribed = true;
+    axios
+      .get("http://tynkerserver.herokuapp.com/tynkerdhsp/courses")
+      .then(res => {
+        if (isSubscribed) {
+          setData(res.data);
+          setLoading(false);
+        }
+      })
+      .catch(err => console.log(err));
+    return () => (isSubscribed = false);
+  });
+  
   return (
-    <CourseContextProvider>
+    <>
       <Introduce name="Khóa Học" />
-      <KhoaHocContent data={courses} loading={loading} />
-    </CourseContextProvider>
+      <KhoaHocContent data={data} loading={loading} />
+    </>
   );
 };
 

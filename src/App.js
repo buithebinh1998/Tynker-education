@@ -1,38 +1,76 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./hoc/Layout";
 import Routes from "./configs/Routes/Route";
 import { BrowserRouter as Router } from "react-router-dom";
-import Loader from './component/Loader/Loader'
+import Loader from "./component/Loader/Loader";
+
+function WaitingComponent(Component) {
+  return props => (
+    <Suspense fallback={<Loader load = "component" />}>
+      <Layout>
+      <Component {...props} />
+      </Layout>
+      
+    </Suspense>
+  );
+}
+
 const renderRouteContainer = routes =>
   routes.map((item, idx) => (
     <Route
       key={idx}
       exact={item.exact}
-      component={item.container}
+      component={WaitingComponent(item.container)}
       path={item.path}
-      render={() => {
-        const otherComponent = React.lazy(() => {
-          return new Promise(resolve => setTimeout(resolve, 5 * 1000)).then(
-            () =>
-              Math.floor(Math.random() * 10) >= 4
-                ? import(`${item.container}`)
-                : Promise.reject(new Error())
-          );
-        });
-        return otherComponent;
-      }}
     />
   ));
 
 function App() {
+  // import { applyMiddleware, createStore, compose } from "redux";
+
+  // // import rootReducer from './reducer';
+
+  // const middleware  = [];
+
+  // const enhancers = [applyMiddleware(...middleware)]
+
+  // const getComposer = () => {
+  //     if (process.env.NODE_ENV === 'production'){
+  //         return compimport {applyMiddleware,createStore,compose} from 'redux';
+
+  // // import rootReducer from './reducer';
+
+  // const middleware  = [];
+
+  // const enhancers = [applyMiddleware(...middleware)]
+
+  // const getComposer = () => {
+  //     if (process.env.NODE_ENV === 'production'){
+  //         return compose
+  //     }
+  //     return window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+  // }
+  // const composer = getComposer()
+
+  // export default (initialState = {}) => {
+  //   const store = createStore(rootReducer, initialState, composer(...enhancers))
+  //   return { store }
+  // }ose
+  //     }
+  //     return window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+  // }
+  // const composer = getComposer()
+
+  // export default (initialState = {}) => {
+  //   const store = createStore(rootReducer, initialState, composer(...enhancers))
+  //   return { store }
+  // }
   return (
     <Router>
-      <React.Suspense fallback={Loader}>
-        <Layout>
-          <Switch>{renderRouteContainer(Routes)}</Switch>
-        </Layout>
-      </React.Suspense>
+      <Switch>
+      {renderRouteContainer(Routes)}
+      </Switch>
     </Router>
   );
 }

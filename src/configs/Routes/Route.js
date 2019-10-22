@@ -1,45 +1,38 @@
-import TrangChu from '../../container/TrangChu';
-import GiaoVien from '../../container/GiaoVien';
-import KhoaHoc from '../../container/KhoaHoc';
-import GioiThieu from '../../container/GioiThieu';
-import LienHe from '../../container/LienHe';
-import FromLoginPage from '../../container/FormLoginPage';
-import FromRegisterPage from '../../container/FormRegisterPage';
-
+import React from 'react'
 export default [
 {
     exact: true,
     path: '/',
-    container: TrangChu
+    container: React.lazy(()=> import('../../container/TrangChu'))
 },
 {
     exact: true,
     path: '/khoahoc',
-    container: KhoaHoc
+    container: React.lazy(()=> import('../../container/KhoaHoc'))
 },
 {
     exact: true,
     path: '/gioithieu',
-    container: GioiThieu
+    container: React.lazy(()=> import('../../container/GioiThieu'))
 },
 {
     exact: true,
     path: '/giaovien',
-    container: GiaoVien
+    container: React.lazy(()=> import('../../container/GiaoVien'))
 },
 {
     exact: true,
     path: '/lienhe',
-    container: LienHe
+    container: React.lazy(()=> import('../../container/LienHe'))
 },
 {
     exact: true,
     path: '/dangnhap',
-    container: FromLoginPage
+    container: React.lazy(()=>import('../../container/FormLoginPage'))
 },
 {
     exact: true,
     path: '/dangky',
-    container: FromRegisterPage 
+    container: React.lazy(()=>import('../../container/FormRegisterPage'))
 }
 ]
