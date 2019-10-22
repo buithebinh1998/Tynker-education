@@ -1,5 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from "react"
+import { NavLink } from "react-router-dom"
+
 const Footer = () => {
   const renderIntroduce = () => (
     <div className="col-md-4">
@@ -12,7 +13,7 @@ const Footer = () => {
               style={{ width: "50px" }}
             />
             TynkerEdu <br />
-            <span style={{ fontSize: 16 + "px", color: "yellow" }}>
+            <span style={{ fontSize: `${16}px`, color: "yellow" }}>
               ĐẠI HỌC SƯ PHẠM
             </span>
           </NavLink>
@@ -30,7 +31,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-  );
+  )
   const renderConnect = () => (
     <div className="col-md-4">
       <div className="ftco-footer-widget mb-4 ml-md-4">
@@ -59,7 +60,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-  );
+  )
   const renderCreated = () => (
     <div className="col-md-12 text-center">
       <p>
@@ -68,7 +69,7 @@ const Footer = () => {
         Anh Tuan
       </p>
     </div>
-  );
+  )
 
   const renderQuestion = () => (
     <div className="col-md-4">
@@ -98,7 +99,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
+  )
   return (
     <div>
       <footer
@@ -119,6 +120,6 @@ const Footer = () => {
         </div>
       </footer>
     </div>
-  );
-};
-export default Footer;
+  )
+}
+export default Footer

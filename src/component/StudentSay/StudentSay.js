@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const StudentSay = props => (
   <section className="ftco-section testimony-section">
@@ -104,5 +104,5 @@ const StudentSay = props => (
       </div>
     </div>
   </section>
-);
+)
 export default StudentSay

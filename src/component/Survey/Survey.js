@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const Survey = (props) => (
-    <section className="ftco-counter bg-light" id="section-counter">
+  <section className="ftco-counter bg-light" id="section-counter">
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-10">
@@ -43,6 +43,6 @@ const Survey = (props) => (
       </div>
     </div>
   </section>
-) 
+)
 
-export default Survey;
+export default Survey

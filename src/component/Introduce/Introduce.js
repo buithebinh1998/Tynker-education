@@ -1,5 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from "react"
+import { NavLink } from "react-router-dom"
+
 const Introduce = props => (
   <div
     className="hero-wrap hero-wrap-2"
@@ -21,11 +22,11 @@ const Introduce = props => (
             </span>{" "}
             <span>{props.name}</span>
           </p>
-          <h1 className="mb-3 bread" style={{textTransform: "uppercase"}}>{props.name}</h1>
+          <h1 className="mb-3 bread" style={{ textTransform: "uppercase" }}>{props.name}</h1>
         </div>
       </div>
     </div>
   </div>
-);
+)
 
-export default Introduce;
+export default Introduce
