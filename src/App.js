@@ -1,30 +1,28 @@
-import React, { Suspense } from "react";
-import { Route, Switch } from "react-router-dom";
-import Layout from "./hoc/Layout";
-import Routes from "./configs/Routes/Route";
-import { BrowserRouter as Router } from "react-router-dom";
-import Loader from "./component/Loader/Loader";
+import React, { Suspense } from "react"
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
+import Layout from "./hoc/Layout"
+import Routes from "./configs/Routes/Route"
+
+import Loader from "./component/Loader/Loader"
 
 function WaitingComponent(Component) {
   return props => (
-    <Suspense fallback={<Loader load = "component" />}>
+    <Suspense fallback={<Loader load="component" />}>
       <Layout>
-      <Component {...props} />
+        <Component {...props} />
       </Layout>
-      
     </Suspense>
-  );
+  )
 }
 
-const renderRouteContainer = routes =>
-  routes.map((item, idx) => (
-    <Route
-      key={idx}
-      exact={item.exact}
-      component={WaitingComponent(item.container)}
-      path={item.path}
-    />
-  ));
+const renderRouteContainer = routes => routes.map((item, idx) => (
+  <Route
+    key={idx}
+    exact={item.exact}
+    component={WaitingComponent(item.container)}
+    path={item.path}
+  />
+))
 
 function App() {
   // import { applyMiddleware, createStore, compose } from "redux";
@@ -69,10 +67,10 @@ function App() {
   return (
     <Router>
       <Switch>
-      {renderRouteContainer(Routes)}
+        {renderRouteContainer(Routes)}
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

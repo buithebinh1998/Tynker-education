@@ -1,0 +1,57 @@
+.component-margin {
+  margin: 50px 0;
+
+  .what-you-get__title {
+    margin-bottom: 1.6rem;
+  }
+
+  .udlite-heading-xl {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+    font-size: 24px;
+  }
+
+  .what-you-get__items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-inline-start: 0;
+  }
+
+  .unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-left: 0;
+    }
+  }
+
+  .udlite-icon-color-neutral {
+    color: #73726c;
+  }
+
+  .udlite-icon-medium {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .udlite-icon {
+    fill: currentColor;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .iconCheck {
+    padding: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .component-margin .udlite-heading-xl {
+    font-size: 30px;
+  }
+}

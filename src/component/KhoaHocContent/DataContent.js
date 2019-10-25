@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const renderComponent = (props) => (
   <>
@@ -30,9 +30,9 @@ const renderComponent = (props) => (
             </div>
           </div>
         </div>
-      );
+      )
     })}
   </>
-);
+)
 
-export default renderComponent;
+export default renderComponent

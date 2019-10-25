@@ -34,5 +34,10 @@ export default [
     exact: true,
     path: '/dangky',
     container: React.lazy(()=>import('../../container/FormRegisterPage'))
+    },
+{
+    exact: true,
+    path: '/learn',
+    container: React.lazy(()=>import('../../container/LearnPage'))
 }
 ]

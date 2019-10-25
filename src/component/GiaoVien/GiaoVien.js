@@ -1,7 +1,8 @@
-import React from "react";
-import Loader from '../Loader/Loader';
+import React from "react"
+import Loader from '../Loader/Loader'
+
 const GiaoVien = props => {
-  const {data,loading} = props;
+  const { data, loading } = props
 
   const renderComponent = (item, idx) => (
     <div className="col-lg-4 mb-sm-4 ftco-animate" key={idx}>
@@ -31,12 +32,11 @@ const GiaoVien = props => {
         </div>
       </div>
     </div>
-  );
+  )
 
-  const renderData = data =>
-    data.map((item, idx) => {
-      return renderComponent(item, idx);
-    });
+  const renderData = data => data.map((item, idx) => {
+    return renderComponent(item, idx)
+  })
 
   return (
     <section className="ftco-section bg-light">
@@ -46,10 +46,10 @@ const GiaoVien = props => {
             <h2 className="mb-4">Những giáo viên của chúng tôi</h2>
           </div>
         </div>
-        <div className="row">{loading ? <Loader/> : renderData(data)}</div>
+        <div className="row">{loading ? <Loader /> : renderData(data)}</div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default GiaoVien;
+export default GiaoVien

@@ -1,6 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-const Navbar = props => {
+import React from "react"
+import { NavLink } from "react-router-dom"
+
+const Navbar = () => {
   const renderHeaderNavMenu = () => (
     <div className="collapse navbar-collapse" id="ftco-nav">
       <ul className="navbar-nav ml-auto">
@@ -43,6 +44,15 @@ const Navbar = props => {
         </li>
         <li className="nav-item">
           <NavLink
+            to="/learn"
+            className="nav-link"
+            activeClassName="nav-link-active"
+          >
+            Learn
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
             to="/lienhe"
             className="nav-link"
             activeClassName="nav-link-active"
@@ -62,7 +72,7 @@ const Navbar = props => {
         </li>
       </ul>
     </div>
-  );
+  )
 
   const renderHeaderLogo = () => (
     <NavLink className="navbar-brand" to="/">
@@ -72,22 +82,22 @@ const Navbar = props => {
         style={{ width: "50px" }}
       />
       TynkerEdu <br />
-      <span style={{ fontSize: 16 + "px", color: "red" }}>ĐẠI HỌC SƯ PHẠM</span>
+      <span style={{ fontSize: `${16}px`, color: "red" }}>ĐẠI HỌC SƯ PHẠM</span>
     </NavLink>
-  );
+  )
 
   const renderHeaderToggleMenu = () => (
     <button
-    className="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#ftco-nav"
-    aria-controls="ftco-nav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span className="oi oi-menu" /> Menu
-  </button>
+      className="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#ftco-nav"
+      aria-controls="ftco-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="oi oi-menu" /> Menu
+    </button>
   )
   return (
     <nav
@@ -95,12 +105,12 @@ const Navbar = props => {
       id="ftco-navbar"
     >
       <div className="container">
-          {renderHeaderLogo()}
-          {renderHeaderToggleMenu()}
-          {renderHeaderNavMenu()}
+        {renderHeaderLogo()}
+        {renderHeaderToggleMenu()}
+        {renderHeaderNavMenu()}
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

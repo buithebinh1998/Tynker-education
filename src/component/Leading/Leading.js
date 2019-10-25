@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Leading = () => (
   <section
@@ -24,5 +24,5 @@ const Leading = () => (
       </div>
     </div>
   </section>
-);
-export default Leading;
+)
+export default Leading
