@@ -1,7 +1,6 @@
 import React from 'react'
 import './CourseContent.scss'
 import ElmCourseContent from './ElmCourseContent/ElmCourseContent'
-import ElmCourseTitle from './ElmCourseTitle/ElmCourseTitle'
 
 const CourseContent = () => {
   return (
@@ -12,7 +11,6 @@ const CourseContent = () => {
             <span id="curriculum" className="in-page-offset-anchor" />
             <div className="ud-component--clp--curriculum">
               <span />
-              <ElmCourseTitle />
               <ElmCourseContent />
             </div>
           </div>
