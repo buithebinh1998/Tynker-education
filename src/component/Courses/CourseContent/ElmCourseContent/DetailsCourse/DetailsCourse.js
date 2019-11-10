@@ -23,7 +23,7 @@ const DetailsCourse = props => (
           <img alt="icon" src={play} />
           <div className="top">
             <div className="title">
-              <a href="/#">create-react-app</a>
+              <a href="/learn/basic">create-react-app</a>
             </div>
           </div>
         </div>

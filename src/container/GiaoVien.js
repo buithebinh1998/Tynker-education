@@ -1,24 +1,24 @@
-import React,{useEffect} from "react";
-import Introduce from "../component/Introduce/Introduce";
-import GiaoVienContent from "../component/GiaoVien/GiaoVien";
-import axios from "axios";
+import React, { useEffect } from 'react'
+import axios from 'axios'
+import Introduce from '../component/Introduce/Introduce'
+import GiaoVienContent from '../component/GiaoVien/GiaoVien'
 
-const GiaoVien = props => {
-  const [data, setData] = React.useState([]);
-  const [loading,setLoading] = React.useState(true);
+const GiaoVien = () => {
+  const [data, setData] = React.useState([])
+  const [loading, setLoading] = React.useState(true)
   useEffect(() => {
     let isSubscribed = true
     axios
-      .get("http://tynkerserver.herokuapp.com/tynkerdhsp/teacher")
+      .get('http://tynkerserver.herokuapp.com/tynkerdhsp/teacher')
       .then(res => {
-        if(isSubscribed){
-        setData(res.data)
-        setLoading(false);
+        if (isSubscribed) {
+          setData(res.data)
+          setLoading(false)
         }
       })
-      .catch(err => console.log(err));
-    return () => (isSubscribed = false);
-  },[]);
+      .catch(err => console.log(err))
+    return () => (isSubscribed = false)
+  }, [])
 
   // useEffect(()=> {
   //   return ()=>{}
@@ -26,9 +26,9 @@ const GiaoVien = props => {
   return (
     <>
       <Introduce name="Giáo Viên" />
-      <GiaoVienContent data = {data} loading = {loading}/>
+      <GiaoVienContent data={data} loading={loading} />
     </>
-  );
-};
+  )
+}
 
-export default GiaoVien;
+export default GiaoVien
