@@ -1,6 +1,7 @@
 .w3 {
     position: relative;
     width: 48%;
+    margin: auto;
 }
 .agile {
     width: 48%;
@@ -149,4 +150,9 @@ h5 {
 }
 .header-social h4 a:hover{
 	color:#FFB900;
+}
+.hero-wrap.hero-wrap-2 {
+    height: 600px;
+    display: flex;
+    align-items: center;
 }

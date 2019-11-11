@@ -50,7 +50,7 @@
 ::-webkit-input-placeholder{
 	color:#fff !important;
 }
-.signin-form input[type="submit"] {
+.signin-form button[type="submit"] {
     outline: none;
     padding: 0.9em 0;
     width: 50%;
@@ -150,4 +150,8 @@ h5 {
 }
 .header-social h4 a:hover{
 	color:#FFB900;
+}
+.Invalid{
+    color:red;
+    font-weight: 100;
 }
