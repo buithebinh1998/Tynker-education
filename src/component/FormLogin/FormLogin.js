@@ -12,7 +12,7 @@ const FormLogin = () => {
       .email('Invalid Email')
       .required('Email is required'),
     phone: Yup.string()
-      .matches(phoneRegExp, 'Phone number is not valid')
+      .matches("abc", 'Phone number is not valid')
       .min(10, 'Too short')
       .max(12, 'Too long')
       .required('Phone number is required'),

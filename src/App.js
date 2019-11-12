@@ -1,10 +1,12 @@
-import React, { Suspense } from "react"
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
-import Layout from "./hoc/Layout"
-import Routes from "./configs/Routes/Route"
-
-import Loader from "./component/Loader/Loader"
-
+import React, { Suspense } from 'react'
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import Layout from './hoc/Layout'
+import Routes from './configs/Routes/Route'
+import { Provider } from 'react-redux'
+import Store, { persistor } from './configs/Store/Store'
+import Loader from './component/Loader/Loader'
+import { PersistGate } from "redux-persist/integration/react";
+require('dotenv').config()
 function WaitingComponent(Component) {
   return props => (
     <Suspense fallback={<Loader load="component" />}>
@@ -15,14 +17,15 @@ function WaitingComponent(Component) {
   )
 }
 
-const renderRouteContainer = routes => routes.map((item, idx) => (
-  <Route
-    key={idx}
-    exact={item.exact}
-    component={WaitingComponent(item.container)}
-    path={item.path}
-  />
-))
+const renderRouteContainer = routes =>
+  routes.map((item, idx) => (
+    <Route
+      key={idx}
+      exact={item.exact}
+      component={WaitingComponent(item.container)}
+      path={item.path}
+    />
+  ))
 
 function App() {
   // import { applyMiddleware, createStore, compose } from "redux";
@@ -65,11 +68,13 @@ function App() {
   //   return { store }
   // }
   return (
-    <Router>
-      <Switch>
-        {renderRouteContainer(Routes)}
-      </Switch>
-    </Router>
+    <Provider store={Store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Router>
+          <Switch>{renderRouteContainer(Routes)}</Switch>
+        </Router>
+      </PersistGate>
+    </Provider>
   )
 }
 
