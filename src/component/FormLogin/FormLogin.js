@@ -1,8 +1,9 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
-import axios from 'axios'
+// import axios from 'axios'
 import './FormLogin.scss'
+import { OAuthAPI as API } from '../../service/AuthenticationAPI.service'
 
 const FormLogin = () => {
   const StudentLoginSchema = Yup.object().shape({
@@ -16,9 +17,8 @@ const FormLogin = () => {
   })
 
   const handleSubmit = values => {
-    axios
-      .post('http://tynkerserver.herokuapp.com/tynkerdhsp/courses', values)
-      .then(res => alert('Thanks for your information!'))
+    API.post('/signin', values)
+      .then(res => console.log(res))
       .catch(err => alert(err))
   }
   return (

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
-import axios from 'axios'
+// import axios from 'axios'
+import { OAuthAPI as API } from '../../service/AuthenticationAPI.service'
 
 import './FormRegister.scss'
 
@@ -25,9 +26,9 @@ const FormRegister = () => {
   })
 
   const handleSubmit = values => {
-    axios
-      .post('http://tynkerserver.herokuapp.com/tynkerdhsp/courses', values)
-      .then(res => alert('Thanks for your information!'))
+    const data = { email: values.email, password: values.password }
+    API.post('/signup', data)
+      .then(res => console.log(res))
       .catch(err => alert(err))
   }
 
