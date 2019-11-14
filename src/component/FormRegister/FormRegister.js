@@ -3,7 +3,7 @@ import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 import axios from 'axios'
 
-import './FormRegister.css'
+import './FormRegister.scss'
 
 const FormRegister = () => {
   const StudentSchema = Yup.object().shape({
@@ -21,7 +21,7 @@ const FormRegister = () => {
     passwordConfirmation: Yup.string().oneOf(
       [Yup.ref('password'), null],
       'Mật khẩu không khớp'
-    ),
+    )
   })
 
   const handleSubmit = values => {
@@ -58,59 +58,57 @@ const FormRegister = () => {
                   <h3>Đăng Ký</h3>
                   <div className="login-form">
                     <Form>
-                      <form action="#" method="post">
-                        <Field type="text" name="email" placeholder="Email" />
-                        {errors.email && touched.email ? (
-                          <div className="Invalid"> {errors.email}</div>
+                      <Field type="text" name="email" placeholder="Email" />
+                      {errors.email && touched.email ? (
+                        <div className="Invalid"> {errors.email}</div>
+                      ) : (
+                        ''
+                      )}
+                      <Field
+                        type="text"
+                        name="username"
+                        placeholder="Tên đăng nhập"
+                      />
+                      {errors.username && touched.username ? (
+                        <div className="Invalid"> {errors.username}</div>
+                      ) : (
+                        ''
+                      )}
+                      <Field
+                        name="password"
+                        maxLength="20"
+                        tabIndex="10"
+                        type="password"
+                        placeholder="Mật khẩu"
+                      />
+                      {errors.password && touched.password ? (
+                        <div className="Invalid">{errors.password}</div>
+                      ) : (
+                        ''
+                      )}
+                      <Field
+                        type="password"
+                        name="passwordConfirmation"
+                        maxLength="20"
+                        tabIndex="10"
+                        placeholder="Xác thực mật khẩu"
+                      />
+                      {errors.passwordConfirmation
+                      && touched.passwordConfirmation ? (
+                        <div className="Invalid">
+                          {errors.passwordConfirmation}
+                        </div>
                         ) : (
                           ''
                         )}
-                        <Field
-                          type="text"
-                          name="username"
-                          placeholder="Tên đăng nhập"
-                        />
-                        {errors.username && touched.username ? (
-                          <div className="Invalid"> {errors.username}</div>
-                        ) : (
-                          ''
-                        )}
-                        <Field
-                          name="password"
-                          maxLength="20"
-                          tabIndex="10"
-                          type="password"
-                          placeholder="Mật khẩu"
-                        />
-                        {errors.password && touched.password ? (
-                          <div className="Invalid">{errors.password}</div>
-                        ) : (
-                          ''
-                        )}
-                        <Field
-                          type="password"
-                          name="passwordConfirmation"
-                          maxLength="20"
-                          tabIndex="10"
-                          placeholder="Xác thực mật khẩu"
-                        />
-                        {errors.passwordConfirmation && touched.passwordConfirmation ? (
-                          <div className="Invalid">
-                            {errors.passwordConfirmation}
-                          </div>
-                        ) : (
-                          ''
-                        )}
-                        {/* <input type="submit"  /> */}
-                        <button
-                          className="form-submit-contact"
-                          type="submit"
-                          value="Submit"
-                          defaultValue="REGISTER"
-                        >
-                          Đăng ký
-                        </button>
-                      </form>
+                      <button
+                        className="form-submit-contact"
+                        type="submit"
+                        value="Submit"
+                        defaultValue="REGISTER"
+                      >
+                        Đăng ký
+                      </button>
                     </Form>
                   </div>
                 </div>
