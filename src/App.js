@@ -1,11 +1,15 @@
 import React, { Suspense } from 'react'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import { routersAuth, routersNotAuth } from "./configs/Routes/Route";
 import Layout from './hoc/Layout'
-import Routes from './configs/Routes/Route'
 import { Provider } from 'react-redux'
 import Store, { persistor } from './configs/Store/Store'
 import Loader from './component/Loader/Loader'
 import { PersistGate } from "redux-persist/integration/react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import history from './configs/History/History'
+
+
 require('dotenv').config()
 function WaitingComponent(Component) {
   return props => (
@@ -28,50 +32,27 @@ const renderRouteContainer = routes =>
   ))
 
 function App() {
-  // import { applyMiddleware, createStore, compose } from "redux";
 
-  // // import rootReducer from './reducer';
-
-  // const middleware  = [];
-
-  // const enhancers = [applyMiddleware(...middleware)]
-
-  // const getComposer = () => {
-  //     if (process.env.NODE_ENV === 'production'){
-  //         return compimport {applyMiddleware,createStore,compose} from 'redux';
-
-  // // import rootReducer from './reducer';
-
-  // const middleware  = [];
-
-  // const enhancers = [applyMiddleware(...middleware)]
-
-  // const getComposer = () => {
-  //     if (process.env.NODE_ENV === 'production'){
-  //         return compose
-  //     }
-  //     return window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-  // }
-  // const composer = getComposer()
-
-  // export default (initialState = {}) => {
-  //   const store = createStore(rootReducer, initialState, composer(...enhancers))
-  //   return { store }
-  // }ose
-  //     }
-  //     return window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-  // }
-  // const composer = getComposer()
-
-  // export default (initialState = {}) => {
-  //   const store = createStore(rootReducer, initialState, composer(...enhancers))
-  //   return { store }
-  // }
   return (
     <Provider store={Store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Router>
-          <Switch>{renderRouteContainer(Routes)}</Switch>
+        <Router history={history}>
+          <Route
+            render={({ location }) => (
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.key}
+                  timeout={450}
+                  classNames="page"
+                >
+                  <Switch>
+                    {renderRouteContainer(routersNotAuth)}
+                    {renderRouteContainer(routersAuth)}
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )}
+          />
         </Router>
       </PersistGate>
     </Provider>

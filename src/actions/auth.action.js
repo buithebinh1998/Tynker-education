@@ -30,6 +30,7 @@ export const register = (email, password, history, resetForm) => {
       password
     })
       .then(res => {
+        console.log(res)
         if (res.data.error) {
           swal({
             title: "Error!",
@@ -47,7 +48,7 @@ export const register = (email, password, history, resetForm) => {
             button: false
           });
           resetForm();
-          history.push("/login");
+          history.push("/dangnhap");
         }
       })
       .catch(err => {
@@ -64,6 +65,7 @@ export const auth = (email, password, history, resetForm) => {
       password
     })
       .then(res => {
+        console.log(res.data.error)
         if (res.data.error) {
           swal({
             title: "Error!",
@@ -73,6 +75,7 @@ export const auth = (email, password, history, resetForm) => {
             button: false
           });
         } else {
+          console.log('1232323')
           const { token } = res.data;
           const userId = jwtDecode(token)._id;
           dispatch(authSuccess(token, userId));
@@ -83,7 +86,7 @@ export const auth = (email, password, history, resetForm) => {
             timer: 2000,
             button: false
           });
-          history.push('/survey')
+          history.push('/learn')
           resetForm();
         }
       })

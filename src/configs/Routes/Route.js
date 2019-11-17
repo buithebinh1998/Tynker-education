@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default [
+export const routersNotAuth = [
   {
     exact: true,
     path: '/',
@@ -36,6 +36,9 @@ export default [
     path: '/dangky',
     container: React.lazy(() => import('../../container/FormRegisterPage'))
   },
+];
+
+export const routersAuth = [
   {
     exact: true,
     path: '/learn',

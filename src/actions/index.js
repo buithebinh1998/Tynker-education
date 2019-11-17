@@ -1,4 +1,5 @@
 export {
     register,
-    auth
+    auth,
+    logout
 } from './auth.action'
