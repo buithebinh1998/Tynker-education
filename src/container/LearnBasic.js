@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import Introduce from '../component/Introduce/Introduce'
-import Course from '../component/Courses/Courses'
+import LearnBasic from '../component/Courses/LearnBasic/LearnBasic'
 
-const KhoaHoc = () => {
+const KhoaHocBasic = () => {
   const [data, setData] = React.useState([])
   const [loading, setLoading] = React.useState(true)
 
@@ -24,9 +24,9 @@ const KhoaHoc = () => {
   return (
     <>
       <Introduce name="Learn" />
-      <Course data={data} loading={loading} />
+      <LearnBasic data={data} loading={loading} />
     </>
   )
 }
 
-export default KhoaHoc
+export default KhoaHocBasic

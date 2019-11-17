@@ -1,6 +1,7 @@
-import React from "react";
-import Introduce from "../component/Introduce/Introduce";
-const LienHe = props => {
+import React from 'react'
+import Introduce from '../component/Introduce/Introduce'
+
+const LienHe = () => {
   return (
     <>
       <Introduce name="Liên Hệ" />
@@ -19,13 +20,13 @@ const LienHe = props => {
             </div>
             <div className="col-md-3">
               <p>
-                <span>Phone:</span>{" "}
+                <span>Phone:</span>{' '}
                 <a href="tel://1234567920">+ 1235 2355 98</a>
               </p>
             </div>
             <div className="col-md-3">
               <p>
-                <span>Email:</span>{" "}
+                <span>Email:</span>{' '}
                 <a href="mailto:info@yoursite.com">info@yoursite.com</a>
               </p>
             </div>
@@ -68,7 +69,7 @@ const LienHe = props => {
                     rows={7}
                     className="form-control"
                     placeholder="Message"
-                    defaultValue={""}
+                    defaultValue=""
                   />
                 </div>
                 <div className="form-group">
@@ -85,7 +86,7 @@ const LienHe = props => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default LienHe;
+export default LienHe

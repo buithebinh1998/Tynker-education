@@ -1,15 +1,16 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import Survey from "../component/Survey/Survey";
-import Leading from "../component/Leading/Leading";
-import StudentSay from "../component/StudentSay/StudentSay";
-const TrangChu = props => {
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Survey from '../component/Survey/Survey'
+import Leading from '../component/Leading/Leading'
+import StudentSay from '../component/StudentSay/StudentSay'
+
+const TrangChu = () => {
   const renderIntroduce = () => (
     <div
       className="hero-wrap"
       style={{
         backgroundImage: 'url("https://i.wingur.com/Eznw.jpg")',
-        backgroundAttachment: "fixed"
+        backgroundAttachment: 'fixed'
       }}
     >
       <div className="overlay" />
@@ -24,9 +25,9 @@ const TrangChu = props => {
               Tynker
             </h1>
             <p>
-              <a href="/" className="btn btn-primary px-4 py-3">
-                Đăng Ký
-              </a>{" "}
+              <NavLink to="/dangky" className="btn btn-primary px-4 py-3">
+                Đăng ký
+              </NavLink>
               <NavLink to="/khoahoc" className="btn btn-secondary px-4 py-3">
                 Xem Khóa Học
               </NavLink>
@@ -35,7 +36,7 @@ const TrangChu = props => {
         </div>
       </div>
     </div>
-  );
+  )
 
   const renderInformation = () => (
     <section className="ftco-section">
@@ -86,7 +87,7 @@ const TrangChu = props => {
         </div>
       </div>
     </section>
-  );
+  )
 
   return (
     <>
@@ -96,7 +97,7 @@ const TrangChu = props => {
       <Survey />
       <StudentSay />
     </>
-  );
-};
+  )
+}
 
-export default TrangChu;
+export default TrangChu

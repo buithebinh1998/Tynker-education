@@ -1,0 +1,21 @@
+.coverCourseVideo {
+  width: 100%;
+  .up-Video {
+    width:100%;
+  }
+  .down-Video {
+    width:100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .coverCourseVideo {
+    width:100%;
+    .up-Video {
+      width:70%;
+    }
+    .down-Video {
+      width:30%;
+    }
+  }
+}
