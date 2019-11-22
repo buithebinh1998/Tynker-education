@@ -1,5 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
+import Logo from '../assets/img/logo-tynker.png'
+
 
 const Footer = () => {
   const renderIntroduce = () => (
@@ -8,11 +10,11 @@ const Footer = () => {
         <h2>
           <NavLink className="navbar-brand" to="/">
             <img
-              src="https://i.wingur.com/i4Zo.png"
+              src={Logo}
               alt="Logo"
-              style={{ width: "50px" }}
+              style={{ height: "50px" }}
             />
-            TynkerEdu <br />
+            <br />
             <span style={{ fontSize: `${16}px`, color: "yellow" }}>
               ĐẠI HỌC SƯ PHẠM
             </span>
@@ -24,9 +26,9 @@ const Footer = () => {
         </p>
         <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
           <li className="ftco-animate">
-            <a href="https://www.facebook.com/tynker.edu/" target="_blank" rel="noopener noreferrer">
+            <NavLink to="https://www.facebook.com/tynker.edu/" target="_blank" rel="noopener noreferrer">
               <span className="icon-facebook" />
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -84,16 +86,16 @@ const Footer = () => {
               </span>
             </li>
             <li>
-              <a href="/">
+              <NavLink to="/">
                 <span className="icon icon-phone" />
                 <span className="text">+84 786 304 558</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/">
+              <NavLink to="/">
                 <span className="icon icon-envelope" />
                 <span className="text">buithebinh1998@gmail.com</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

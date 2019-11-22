@@ -1,7 +1,56 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, withRouter } from "react-router-dom"
+import Logo from '../assets/img/logo-tynker.png'
+import { C } from '../constants/index'
+import { connect } from "react-redux"
+import * as actions from '../actions/index'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {
+    isAuthenticated,
+    onLogOut
+  } = props;
+
+  const renderLoginNavMenu = () => {
+    if (isAuthenticated) {
+      return (
+        <>
+          <li className="nav-item cta">
+            <NavLink
+              to="/learn"
+              className="nav-link"
+              activeClassName="nav-link-active"
+            >
+              <span>Bài học</span>
+            </NavLink>
+          </li>
+          <li className="nav-item cta" onClick={onLogOut}>
+            <NavLink
+              to="/"
+              className="nav-link"
+              activeClassName="nav-link-active"
+            >
+              <span>Đăng xuất</span>
+            </NavLink>
+          </li>
+        </>
+      )
+    } else return (
+      <>
+        <li className="nav-item cta">
+          <NavLink to="/dangky" className="nav-link">
+            <span>Đăng ký</span>
+          </NavLink>
+        </li>
+        <li className="nav-item cta">
+          <NavLink to="/dangnhap" className="nav-link">
+            <span>Đăng nhập</span>
+          </NavLink>
+        </li>
+      </>
+    )
+  }
+
   const renderHeaderNavMenu = () => (
     <div className="collapse navbar-collapse" id="ftco-nav">
       <ul className="navbar-nav ml-auto">
@@ -42,15 +91,7 @@ const Navbar = () => {
             Giáo viên
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink
-            to="/learn"
-            className="nav-link"
-            activeClassName="nav-link-active"
-          >
-            Learn
-          </NavLink>
-        </li>
+
         <li className="nav-item">
           <NavLink
             to="/lienhe"
@@ -60,16 +101,7 @@ const Navbar = () => {
             Liên hệ
           </NavLink>
         </li>
-        <li className="nav-item cta">
-          <NavLink to="/dangky" className="nav-link">
-            <span>Đăng ký</span>
-          </NavLink>
-        </li>
-        <li className="nav-item cta">
-          <NavLink to="/dangnhap" className="nav-link">
-            <span>Đăng nhập</span>
-          </NavLink>
-        </li>
+        {renderLoginNavMenu()}
       </ul>
     </div>
   )
@@ -77,11 +109,11 @@ const Navbar = () => {
   const renderHeaderLogo = () => (
     <NavLink className="navbar-brand" to="/">
       <img
-        src="https://i.wingur.com/i4Zo.png"
+        src={Logo}
         alt="Logo"
-        style={{ width: "50px" }}
+        style={{ height: '50px' }}
       />
-      TynkerEdu <br />
+      <br />
       <span style={{ fontSize: `${16}px`, color: "red" }}>ĐẠI HỌC SƯ PHẠM</span>
     </NavLink>
   )
@@ -96,9 +128,10 @@ const Navbar = () => {
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span className="oi oi-menu" /> Menu
+      <span className="oi oi-menu" />
     </button>
   )
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
@@ -113,4 +146,25 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+// export default Navbar
+const mapStateToProps = state => {
+  return {
+    isAuthenticated: state.auth.token !== C.EMPTY_STRING,
+    loading: state.auth.loading,
+    isShowPassword: state.auth.isShowPassword
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onAuth: (email, password, history, resetForm) =>
+      dispatch(actions.auth(email, password, history, resetForm)),
+    onLogOut: () => dispatch(actions.logout())
+    // onShowPassword: () => dispatch(actions.onShowPassword()),
+    // onHidePassword: () => dispatch(actions.onHidePassword())
+  }
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(Navbar))

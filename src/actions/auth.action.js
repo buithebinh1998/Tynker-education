@@ -65,8 +65,10 @@ export const auth = (email, password, history, resetForm) => {
       password
     })
       .then(res => {
-        console.log(res.data.error)
+          console.log(res.data.error)
         if (res.data.error) {
+          console.log(res.data.error)
+          console.log('failed')
           swal({
             title: "Error!",
             text: res.data.error,
@@ -75,7 +77,6 @@ export const auth = (email, password, history, resetForm) => {
             button: false
           });
         } else {
-          console.log('1232323')
           const { token } = res.data;
           const userId = jwtDecode(token)._id;
           dispatch(authSuccess(token, userId));
@@ -91,6 +92,14 @@ export const auth = (email, password, history, resetForm) => {
         }
       })
       .catch(err => {
+        // swal({
+        //   title: "Opp!",
+        //   text: err,
+        //   icon: "error",
+        //   timer: 2000,
+        //   button: false
+        // });
+        // history.push('/dangnhap')
         dispatch(authFail(err));
       });
   };
