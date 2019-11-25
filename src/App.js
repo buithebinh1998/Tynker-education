@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch, Router } from 'react-router-dom'
 import { routersAuth, routersNotAuth } from "./configs/Routes/Route";
 import Layout from './hoc/Layout'
 import { Provider } from 'react-redux'

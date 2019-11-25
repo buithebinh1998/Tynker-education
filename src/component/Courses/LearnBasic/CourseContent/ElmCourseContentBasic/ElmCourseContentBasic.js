@@ -22,19 +22,19 @@ class ElmCourseContentBasic extends React.Component {
   }
 
   render() {
-    let { plusMinus, lecture, toggleClass } = this.props
+    let { plusMinus, lecture, toggleClass, toggleExpand } = this.props
     const { opened } = this.state
 
     if (!opened) {
       plusMinus = plus
       toggleClass = 'toggleClass'
       lecture = ''
-      // toggleExpand = 'Expand all'
+      toggleExpand = 'Expand all'
     } else {
       plusMinus = minus
       toggleClass = ''
       lecture = 'lecture'
-      // toggleExpand = 'Collapse all'
+      toggleExpand = 'Collapse all'
     }
 
     return (
@@ -47,29 +47,28 @@ class ElmCourseContentBasic extends React.Component {
             >
               Nội dung khóa học
             </div>
-            {/* <div
+            <div
               className="header-right"
               data-purpose="curriculum-content-summary"
+
             >
               <span>
-                <a
-                  className="sections-toggle"
-                  href="#/"
+                <div
                   onClick={this.toggleBtn}
+                  className="sections-toggle" style={{ cursor: 'pointer' }}
                 >
                   {toggleExpand}
-                </a>
+                </div>
               </span>
-              <span className="dib">39 lectures</span>
+              <span className="dib">39 bài học</span>
               <span className="curriculum-header-length">04:45:42</span>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="coverElmCourseContent curriculum-wrapper">
           <div className="lectures-container-Intro" onClick={this.toggleBtn}>
-            <a
+            <div
               className="section-container section-container--expanded"
-              href="#/"
             >
               <div className="section-header-left">
                 <span className="section-title-wrapper">
@@ -84,11 +83,11 @@ class ElmCourseContentBasic extends React.Component {
               </div>
               <div className="section-header-right">
                 <span className={`num-items-in-section ${lecture}`}>
-                  4 chủ đề
+                  4 lectures
                 </span>
                 <span className="section-header-length">07:53</span>
               </div>
-            </a>
+            </div>
           </div>
           <DetailsCourse toggleClass={toggleClass} />
         </div>

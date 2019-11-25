@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 
 const renderComponent = (props) => (
   <>
@@ -6,26 +7,26 @@ const renderComponent = (props) => (
       return (
         <div className="col-md-4 d-flex ftco-animate" key={idx}>
           <div className="course align-self-stretch">
-            <a
-              href="/"
+            <NavLink
+              to="/"
               className="img"
               style={{ backgroundImage: `url(${item.imgLink})` }}
             >
               {" "}
-            </a>
+            </NavLink>
             <div className="text p-4">
               <p className="category">
                 <span>{item.title}</span>{" "}
                 <span className="price">{item.price}</span>
               </p>
               <h3 className="mb-3" align="center">
-                <a href="/">{item.name}</a>
+                <NavLink to="/">{item.name}</NavLink>
               </h3>
               <p align="justify">{item.description}</p>
               <p>
-                <a href="/" className="btn btn-primary">
+                <NavLink to="/" className="btn btn-primary">
                   Bắt đầu khóa học!
-                </a>
+                </NavLink>
               </p>
             </div>
           </div>

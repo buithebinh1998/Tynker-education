@@ -50,15 +50,15 @@ class ElmCourseContent extends React.Component {
             <div
               className="header-right"
               data-purpose="curriculum-content-summary"
+
             >
               <span>
-                <a
-                  className="sections-toggle"
-                  href="#/"
+                <div
                   onClick={this.toggleBtn}
+                  className="sections-toggle" style={{ cursor: 'pointer' }}
                 >
                   {toggleExpand}
-                </a>
+                </div>
               </span>
               <span className="dib">39 bài học</span>
               <span className="curriculum-header-length">04:45:42</span>
@@ -67,9 +67,8 @@ class ElmCourseContent extends React.Component {
         </div>
         <div className="coverElmCourseContent curriculum-wrapper">
           <div className="lectures-container-Intro" onClick={this.toggleBtn}>
-            <a
+            <div
               className="section-container section-container--expanded"
-              href="#/"
             >
               <div className="section-header-left">
                 <span className="section-title-wrapper">
@@ -88,7 +87,7 @@ class ElmCourseContent extends React.Component {
                 </span>
                 <span className="section-header-length">07:53</span>
               </div>
-            </a>
+            </div>
           </div>
           <DetailsCourse toggleClass={toggleClass} />
         </div>

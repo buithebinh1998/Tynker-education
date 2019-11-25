@@ -63,8 +63,8 @@ const LienHe = () => {
                 </div>
                 <div className="form-group">
                   <textarea
-                    name
-                    id
+                    name='true'
+                    id='true'
                     cols={30}
                     rows={7}
                     className="form-control"
