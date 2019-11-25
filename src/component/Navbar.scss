@@ -1,8 +1,41 @@
 .imgNavbarLogo {
   height: 35px;
 }
+
+div#ftco-nav {
+  justify-content: center;
+}
+div#ftco-nav.toggleClass{
+  display: flex;
+}
 @media (min-width: 768px) {
   .imgNavbarLogo {
     height: 50px;
+  }
+}
+
+@media (min-width: 1024px){
+  div#ftco-nav {
+    justify-content: flex-end;
+  }
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
 }
