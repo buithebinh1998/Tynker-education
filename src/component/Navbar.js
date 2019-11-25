@@ -4,6 +4,7 @@ import Logo from '../assets/img/logo-tynker.png'
 import { C } from '../constants/index'
 import { connect } from "react-redux"
 import * as actions from '../actions/index'
+import './Navbar.scss'
 
 const Navbar = (props) => {
   const {
@@ -109,9 +110,9 @@ const Navbar = (props) => {
   const renderHeaderLogo = () => (
     <NavLink className="navbar-brand" to="/">
       <img
+        className="imgNavbarLogo"
         src={Logo}
         alt="Logo"
-        style={{ height: '50px' }}
       />
       <br />
       <span style={{ fontSize: `${16}px`, color: "red" }}>ĐẠI HỌC SƯ PHẠM</span>

@@ -183,10 +183,18 @@ h5 {
 }
 
 .Invalid {
-  color: red;
+  color: #e0db17;
   font-weight: 100;
 }
 
+span.txt1 {
+  color: white;
+}
+a.txt2.hov1 {
+  color: #e0db17;
+  text-decoration: underline;
+  margin-left: 5px;
+}
 @media (min-width: 768px) {
   .w4 .agile {
     width: 500px;

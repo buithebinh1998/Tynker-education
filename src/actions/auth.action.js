@@ -2,6 +2,8 @@ import { OAuthAPI as API } from "../service/AuthenticationAPI.service";
 import * as jwtDecode from "jwt-decode";
 import * as actionTypes from "./actionType";
 import swal from "sweetalert";
+import { C } from '../constants/index'
+
 export const authStart = () => {
   return {
     type: actionTypes.AUTH_START
@@ -65,10 +67,11 @@ export const auth = (email, password, history, resetForm) => {
       password
     })
       .then(res => {
-          console.log(res.data.error)
+        console.log("TCL: auth -> res", res)
+        console.log(res.data)
         if (res.data.error) {
           console.log(res.data.error)
-          console.log('failed')
+          console.log('failed2')
           swal({
             title: "Error!",
             text: res.data.error,
@@ -92,15 +95,17 @@ export const auth = (email, password, history, resetForm) => {
         }
       })
       .catch(err => {
-        // swal({
-        //   title: "Opp!",
-        //   text: err,
-        //   icon: "error",
-        //   timer: 2000,
-        //   button: false
-        // });
-        // history.push('/dangnhap')
-        dispatch(authFail(err));
+        if (err) {
+          swal({
+            title: "Error!",
+            text: err ? err.response.data.error : C.EMPTY_STRING,
+            icon: "error",
+            timer: 2000,
+            button: false
+          });
+
+          dispatch(authFail(err));
+        }
       });
   };
 };
@@ -109,6 +114,13 @@ export const logout = () => {
   localStorage.removeItem("token");
   localStorage.removeItem("expirationDate");
   localStorage.removeItem("userId");
+  swal({
+    title: "Done!",
+    text: "Logout Successfully!",
+    icon: "success",
+    timer: 1500,
+    button: false
+  });
   return {
     type: actionTypes.AUTH_LOGOUT
   };

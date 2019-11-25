@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom"
 import folder from '../../../../../assets/icon/folder.svg'
 import play from '../../../../../assets/icon/play-circle.svg'
 import '../ElmCourseContent.scss'
@@ -23,14 +24,14 @@ const DetailsCourse = props => (
           <img alt="icon" src={play} />
           <div className="top">
             <div className="title">
-              <a href="/learn/basic">create-react-app</a>
+              <NavLink to="/learn/basic">create-react-app</NavLink>
             </div>
           </div>
         </div>
         <div className="details">
-          <a href="/#">
+          <NavLink to="/#">
             <span className="preview-text">Preview</span>
-          </a>
+          </NavLink>
           <span className="content-summary">04:15</span>
         </div>
       </div>
