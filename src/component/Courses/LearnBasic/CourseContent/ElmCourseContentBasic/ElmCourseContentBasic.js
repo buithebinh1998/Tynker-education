@@ -5,7 +5,6 @@ import minus from '../../../../../assets/icon/minus.svg'
 import DetailsCourse from '../../../CourseContent/ElmCourseContent/DetailsCourse/DetailsCourse'
 import '../../../CourseContent/ElmCourseContent/ElmCourseContent.scss'
 
-// eslint-disable-next-line react/prefer-stateless-function
 class ElmCourseContentBasic extends React.Component {
   constructor(props) {
     super(props)
@@ -60,7 +59,7 @@ class ElmCourseContentBasic extends React.Component {
                   {toggleExpand}
                 </div>
               </span>
-              <span className="dib">39 bài học</span>
+              {/* <span className="dib">5 bài học</span> */}
               <span className="curriculum-header-length">04:45:42</span>
             </div>
           </div>
@@ -83,7 +82,7 @@ class ElmCourseContentBasic extends React.Component {
               </div>
               <div className="section-header-right">
                 <span className={`num-items-in-section ${lecture}`}>
-                  4 lectures
+                  5 lectures
                 </span>
                 <span className="section-header-length">07:53</span>
               </div>
