@@ -1,80 +1,53 @@
 import React from 'react'
-import { Document, Page } from 'react-pdf/dist/entry.parcel';
+import { Document, Page } from "react-pdf";
 import './VideoCourse.scss'
 
 import pdfFile from '../../../../assets/pdf/Bai1.pdf'
 
-// const options = {
-//   cMapUrl: 'cmaps/',
-//   cMapPacked: true,
-// }
+const options = {
+  cMapUrl: 'cmaps/',
+  cMapPacked: true,
+}
 
 class VideoCourse extends React.Component {
-  // state = {
-  //   file: pdfFile,
-  //   numPages: null,
-  // }
+  state = { numPages: null, pageNumber: 1 };
 
-  // onFileChange = (event) => {
-  //   this.setState({
-  //     file: event.target.files[0],
-  //   })
-  // }
 
-  // onDocumentLoadSuccess = ({ numPages }) => {
-  //   this.setState({ numPages })
-  // }
-  state = {
-    numPages: null,
-    pageNumber: 1,
-  }
- 
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages });
-  }
+  };
+
+  goToPrevPage = () =>
+    this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
+  goToNextPage = () =>
+    this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
+
 
   render() {
-    // const { file, numPages } = this.state
     const { pageNumber, numPages } = this.state;
 
     return (
       <div className="video-background">
-        {/* <div className="Example__container">
+        <div className="Example__container">
           <div className="Example__container__load">
-            <label htmlFor="file">Load from file:</label>
-            {' '}
-            <input
-              onChange={this.onFileChange}
-              type="file"
-            />
+            <nav>
+              <button onClick={this.goToPrevPage}>Prev</button>
+              <button onClick={this.goToNextPage}>Next</button>
+            </nav>
           </div>
           <div className="Example__container__document">
             <Document
-              file={file}
-              onLoadSuccess={this.onDocumentLoadSuccess}
               options={options}
+              file={pdfFile}
+              onLoadSuccess={this.onDocumentLoadSuccess}
             >
-              {
-                Array.from(
-                  new Array(numPages),
-                  (el, index) => (
-                    <Page
-                      key={`page_${index + 1}`}
-                      pageNumber={index + 1}
-                    />
-                  ),
-                )
-              }
+              <Page pageNumber={pageNumber} top='0' left='0' />
             </Document>
           </div>
-        </div> */}
-        <Document
-          file={pdfFile}
-          onLoadSuccess={this.onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
-        <p>Page {pageNumber} of {numPages}</p>
+        </div>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
       </div>
     )
   }

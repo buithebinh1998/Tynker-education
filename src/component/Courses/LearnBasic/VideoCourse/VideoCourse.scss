@@ -50,7 +50,9 @@
     width: 100%;
   }
 }
-
+.react-pdf__Page__textContent {
+  display: none;
+}
 @media (min-width: 768px) {
   .video-background {
     iframe {
