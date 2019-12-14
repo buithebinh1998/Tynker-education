@@ -59,7 +59,6 @@ class ElmCourseContentBasic extends React.Component {
                   {toggleExpand}
                 </div>
               </span>
-              {/* <span className="dib">5 bài học</span> */}
               <span className="curriculum-header-length">04:45:42</span>
             </div>
           </div>
@@ -88,7 +87,7 @@ class ElmCourseContentBasic extends React.Component {
               </div>
             </div>
           </div>
-          <DetailsCourse toggleClass={toggleClass} />
+          <DetailsCourse toggleClass={toggleClass} _id={this.props._id}/>
         </div>
       </>
     )

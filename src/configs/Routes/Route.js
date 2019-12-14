@@ -46,7 +46,7 @@ export const routersAuth = [
   },
   {
     exact: true,
-    path: '/learn/basic',
+    path: '/learn/basic/:id',
     container: React.lazy(() => import('../../container/LearnBasic'))
   }
 ]

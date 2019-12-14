@@ -3,15 +3,25 @@ import VideoCourse from './VideoCourse/VideoCourse'
 import './LearnBasic.scss'
 import CourseContentBasic from './CourseContent/CourseContent'
 
-const LearnBasic = () => (
-  <div className="row coverCourseVideo">
-    <div className="up-Video">
-      <VideoCourse />
-    </div>
-    <div className="container down-Video">
-      <CourseContentBasic />
-    </div>
-  </div>
-)
+class LearnBasic extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      idCourse : 1
+    }
+  }
 
+  render() {
+    return (
+      <div className="row coverCourseVideo">
+        <div className="up-Video">
+          <VideoCourse _id={this.state.idCourse} />
+        </div>
+        <div className="container down-Video">
+          <CourseContentBasic _id={this.state.idCourse} />
+        </div>
+      </div>
+    )
+  }
+}
 export default LearnBasic

@@ -1,7 +1,7 @@
 import React from 'react'
 import ElmCourseContentBasic from './ElmCourseContentBasic/ElmCourseContentBasic'
 
-const CourseContentBasic = () => (
+const CourseContentBasic = (props) => (
   <>
     <div className="col-xxs-8 left-col">
       <div className="clp-component-render">
@@ -9,7 +9,7 @@ const CourseContentBasic = () => (
           <span id="curriculum" className="in-page-offset-anchor" />
           <div className="ud-component--clp--curriculum">
             <span />
-            <ElmCourseContentBasic />
+            <ElmCourseContentBasic _id={props._id} />
           </div>
         </div>
       </div>

@@ -96,8 +96,13 @@
     }
   }
   .video-background canvas.react-pdf__Page__canvas {
-    /* width: auto!important; */
     width: 100% !important;
     height: 600px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-background canvas.react-pdf__Page__canvas {
+    height: 900px !important;
   }
 }

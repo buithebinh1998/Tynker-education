@@ -27,7 +27,6 @@ class VideoCourse extends React.Component {
   }
 
   goToPrevPage = () => {
-
     if (this.state.pageNumber !== 1) {
       this.setState(state => ({ pageNumber: state.pageNumber - 1 }))
       this.setState({ visibleLeft: '', visibleRight: '' })
