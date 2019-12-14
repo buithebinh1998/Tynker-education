@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { dataCourse } from '../../../../../data/dataCourse'
+import { connect } from 'react-redux'
 import play from '../../../../../assets/icon/play-circle.svg'
 import '../ElmCourseContent.scss'
 
 const DetailsCourse = props => {
-
+  const { dataCourse } = props
   return (
     <div className={`cover-lectures-container ${props.toggleClass}`}>
       <div className="lectures-container">
@@ -15,9 +15,7 @@ const DetailsCourse = props => {
               <img alt="icon" src={play} />
               <div className="top">
                 <div className="title">
-                  <NavLink onClick={setId()} to={`/learn/basic/${index + 1}`}>
-                    {data.title}
-                  </NavLink>
+                  <NavLink to={`/learn/basic/${data.id}`}>{data.title}</NavLink>
                 </div>
               </div>
             </div>
@@ -30,5 +28,9 @@ const DetailsCourse = props => {
     </div>
   )
 }
-
-export default DetailsCourse
+const mapStateToProps = state => {
+  return {
+    dataCourse: state.pages
+  }
+}
+export default connect(mapStateToProps, null)(DetailsCourse)

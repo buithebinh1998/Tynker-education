@@ -2,10 +2,7 @@ import React from 'react'
 import { Document, Page } from "react-pdf";
 import './VideoCourse.scss'
 import pre from '../../../../assets/icon/chevron-right.svg'
-
 import next from '../../../../assets/icon/chevron-left.svg'
-import pdfFile from '../../../../assets/pdf/Bai1.pdf'
-
 const options = {
   cMapUrl: 'cmaps/',
   cMapPacked: true,
@@ -48,7 +45,7 @@ class VideoCourse extends React.Component {
   }
   render() {
     const { pageNumber, numPages, visibleLeft, visibleRight } = this.state;
-
+    const {page} = this.props;
     return (
       <div className="video-background">
         <div className="Example__container">
@@ -56,7 +53,7 @@ class VideoCourse extends React.Component {
           <div className="Example__container__document">
             <Document
               options={options}
-              file={pdfFile}
+              file={page.pdf}
               onLoadSuccess={this.onDocumentLoadSuccess}
             >
               <Page pageNumber={pageNumber} top='0' left='0' />
