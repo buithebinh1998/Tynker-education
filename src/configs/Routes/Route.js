@@ -36,6 +36,11 @@ export const routersNotAuth = [
     path: '/dangky',
     container: React.lazy(() => import('../../container/FormRegisterPage'))
   },
+  {
+    exact: true,
+    path: '/play',
+    container: React.lazy(() => import('../../container/PlayGamePage'))
+  }
 ];
 
 export const routersAuth = [

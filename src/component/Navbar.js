@@ -98,7 +98,15 @@ const Navbar = (props) => {
             Giáo viên
           </NavLink>
         </li>
-
+        <li className="nav-item">
+          <NavLink
+            to="/play"
+            className="nav-link"
+            activeClassName="nav-link-active"
+          >
+            Play Game
+          </NavLink>
+        </li>
         <li className="nav-item">
           <NavLink
             to="/lienhe"
