@@ -1,5 +1,6 @@
 import React from 'react'
 import { Document, Page } from "react-pdf";
+import ContentLoader from 'react-content-loader'
 import './VideoCourse.scss'
 import pre from '../../../../assets/icon/chevron-right.svg'
 import next from '../../../../assets/icon/chevron-left.svg'
@@ -19,6 +20,17 @@ class VideoCourse extends React.Component {
     }
   }
 
+   MyLoader = () => (
+    <ContentLoader
+      height={220}
+      speed={1}
+      primaryColor="rgba(0,0,0,0.06)"
+      secondaryColor="#ecebeb"
+      animate={true}
+    >
+      <rect x="0" y="2" rx="5" ry="5" width="100%" height="100%" />
+    </ContentLoader>
+  )
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages })
   }
@@ -50,16 +62,17 @@ class VideoCourse extends React.Component {
       <div className="video-background">
         <div className="Example__container">
 
-          <div className="Example__container__document">
+          <div className="Example__container__document"  >
             <Document
               options={options}
               file={page.pdf}
               onLoadSuccess={this.onDocumentLoadSuccess}
+              loading = {this.MyLoader}
             >
               <Page pageNumber={pageNumber} top='0' left='0' />
             </Document>
           </div>
-          <div className="Example__container__load">
+          <div className="Example__container__load" >
             <nav>
               <div onClick={this.goToPrevPage} className={`${visibleLeft}`}>
                 <img alt='img' src={next} style={{ width: '40px' }} />

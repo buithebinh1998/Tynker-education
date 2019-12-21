@@ -18,7 +18,7 @@ const GiaoVien = () => {
       })
       .catch(err => console.log(err))
     return () => (isSubscribed = false)
-  }, [loading])
+  }, [])
 
   // useEffect(()=> {
   //   return ()=>{}

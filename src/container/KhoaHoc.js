@@ -19,7 +19,7 @@ const KhoaHoc = props => {
       })
       .catch(err => console.log(err))
     return () => (isSubscribed = false)
-  })
+  }, [])
 
   return (
     <>

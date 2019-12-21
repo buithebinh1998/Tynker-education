@@ -31,6 +31,10 @@ export default {
       Game8: {
         gameLink: "5dfcb6b6e7d13888794d3a4f&controls=false&autostart=false",
         name: "Ping Pong"
-      }
+      },
+      Game9: {
+        gameLink: "5dd7d80a7b598618b6430bff&controls=false&autostart=false",
+        name: "Phi thuyền" 
+      },
     }
 }

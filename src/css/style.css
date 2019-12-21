@@ -10733,7 +10733,7 @@ h5,
 }
 
 .slider-text h1 {
-  font-size: 60px;
+  font-size: 2rem;
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
@@ -10741,7 +10741,7 @@ h5,
 
 @media (max-width: 991.98px) {
   .slider-text h1 {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 
@@ -11312,7 +11312,8 @@ h5,
 
 .course .img {
   display: block;
-  height: 283px;
+  height: 300px;
+  width: 100%;
 }
 
 .course .text h3 {
