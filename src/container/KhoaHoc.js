@@ -10,7 +10,7 @@ const KhoaHoc = props => {
   useEffect(() => {
     let isSubscribed = true
     axios
-      .get('http://tynkerserver.herokuapp.com/tynkerdhsp/courses')
+      .get('https://tynkerserver.herokuapp.com/tynkerdhsp/courses')
       .then(res => {
         if (isSubscribed) {
           setData(res.data)
