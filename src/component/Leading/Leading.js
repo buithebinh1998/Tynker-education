@@ -10,7 +10,7 @@ const Leading = () => (
       <div className="row d-md-flex justify-content-center">
         <div className="col-md-9 about-video text-center">
           <h2 className="ftco-animate">
-            Genius University is a Leading Schools Around the World
+            TynkerEdu - học lập trình trực quan đơn giản và thú vị.
           </h2>
           <div className="video d-flex justify-content-center">
             <a

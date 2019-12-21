@@ -5,7 +5,7 @@ const StudentSay = props => (
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
         <div className="col-md-7 heading-section ftco-animate text-center">
-          <h2 className="mb-4">What Our Student Says</h2>
+          <h2 className="mb-4">Học viên nói gì?</h2>
         </div>
       </div>
       <div className="row">
@@ -23,13 +23,12 @@ const StudentSay = props => (
                 </div>
                 <div className="text">
                   <p className="mb-5">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                  Em rất cảm ơn TynkerEdu đã cung cấp một khóa học "Tynker cơ bản" cực kì bổ ích. 
+                  Vừa được tiếp thu kiến thức mới, vừa được trực tiếp thực hành giúp đỡ em rất nhiều trong việc học lập trình. 
+          
                   </p>
-                  <p className="name">Dennis Green</p>
-                  <span className="position">CSE Student</span>
+                  <p className="name">Bùi Hoàng Minh</p>
+                  <span className="position">Học sinh THCS</span>
                 </div>
               </div>
             </div>
@@ -45,13 +44,11 @@ const StudentSay = props => (
                 </div>
                 <div className="text">
                   <p className="mb-5">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                  Nhờ có TynkerEdu, em đã biết thêm được rất nhiều kiến thức bổ ích về những cấu trúc mà em không thể hiểu được khi tự tìm hiểu.
+                  Em sẽ tiếp tục đăng ký lớp "Tynker nâng cao" để theo đuổi niềm đam mê lập trình của bản thân.
                   </p>
-                  <p className="name">Dennis Green</p>
-                  <span className="position">Math Student</span>
+                  <p className="name">Trần Anh Phúc</p>
+                  <span className="position">Học sinh THCS</span>
                 </div>
               </div>
             </div>
@@ -67,13 +64,12 @@ const StudentSay = props => (
                 </div>
                 <div className="text">
                   <p className="mb-5">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                  Tôi chưa từng hối hận khi đăng ký cho con mình một khóa học ở trang TynkerEdu.
+                  Những bài giảng rất hay, kèm theo những ví dụ rất thực tế làm cho con tôi rất hứng thú và đam mê lập trình.
+                  Tôi cảm ơn TynkerEdu.
                   </p>
-                  <p className="name">Dennis Green</p>
-                  <span className="position">Science Students</span>
+                  <p className="name">Lâm Sơn Tùng</p>
+                  <span className="position">Phụ huynh</span>
                 </div>
               </div>
             </div>
@@ -89,13 +85,11 @@ const StudentSay = props => (
                 </div>
                 <div className="text">
                   <p className="mb-5">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                    Những tài liệu bổ ích cùng những bài giảng tuyệt vời của TynkerEdu đã hun đúc cho tôi những kinh nghiệm quý giá 
+                    cho việc dạy học lập trình của tôi. Tôi chân thành cảm ơn công sức của các thầy cô.
                   </p>
-                  <p className="name">Dennis Green</p>
-                  <span className="position">English Student</span>
+                  <p className="name">Nguyễn Minh Đạt</p>
+                  <span className="position">Giáo viên</span>
                 </div>
               </div>
             </div>

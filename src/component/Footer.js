@@ -94,7 +94,7 @@ const Footer = () => {
             <li>
               <NavLink to="/">
                 <span className="icon icon-envelope" />
-                <span className="text">buithebinh1998@gmail.com</span>
+                <span className="text">tynker.edu@gmail.com</span>
               </NavLink>
             </li>
           </ul>

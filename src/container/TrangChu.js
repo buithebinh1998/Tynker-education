@@ -21,8 +21,7 @@ const TrangChu = () => {
         >
           <div className="col-md-10 ftco-animate text-center">
             <h1 className="mb-4">
-              Học Lập Trình Trực Quan <br /> Theo Định Hướng STEAM <br /> Với
-              Tynker
+              TynkerEdu <br /> Trang Web dạy học lập trình trực quan bằng ngôn ngữ Tynker
             </h1>
             <p>
               <NavLink to="/dangky" className="btn btn-primary px-4 py-3">
@@ -48,10 +47,9 @@ const TrangChu = () => {
                 <span className="flaticon-exam" />
               </div>
               <div className="media-body px-3">
-                <h3 className="heading">Admission</h3>
+                <h3 className="heading">Thực hành ngay</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  Khi tham gia khóa học, cuối mỗi bài học đều có phần demo chạy thử sản phẩm và có riêng một phần dành cho các bạn lập trình, thử nghiệm sản phẩm.
                 </p>
               </div>
             </div>
@@ -62,10 +60,9 @@ const TrangChu = () => {
                 <span className="flaticon-blackboard" />
               </div>
               <div className="media-body px-3">
-                <h3 className="heading">Notice Board</h3>
+                <h3 className="heading">Bài giảng trực quan</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  TynkerEdu cung cấp cho các bạn các khóa học bao gồm rất nhiều bài giảng trực quan, dễ hiểu, được thiết kế nhằm phát huy năng lực Tin học ở mỗi cá nhân. 
                 </p>
               </div>
             </div>
@@ -76,10 +73,9 @@ const TrangChu = () => {
                 <span className="flaticon-books" />
               </div>
               <div className="media-body px-3">
-                <h3 className="heading">Our Library</h3>
+                <h3 className="heading">Tài liệu bổ ích</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  Các tài liệu được biên soạn vô cùng chi tiết và công phu sẽ được cung cấp sau khi các bạn đăng ký tham gia khóa học.
                 </p>
               </div>
             </div>
