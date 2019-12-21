@@ -1,15 +1,23 @@
 import React from 'react'
-import Introduce from '../component/Introduce/Introduce';
+import Introduce from '../component/Introduce/Introduce'
+import Game from '../component/Game/Game'
+import D from '../constants/dictionary'
 const PlayGame = props => {
-    return (
-      <>
-        <Introduce name ="Play"/>
-        <div className = "tynker-game">
-        <iframe width="50%" height="408"  src="//www.tynker.com/ide/embedded?p=5dd7d80a7b598618b6430bff&controls=false&autostart=false" frameborder="0" allowfullscreen title = "maybay"></iframe>
-        <iframe width="50%" height="408"  src="//www.tynker.com/ide/embedded?p=5dd7d80a7b598618b6430bff&controls=false&autostart=false" frameborder="0" allowfullscreen title = "phithuyen"></iframe>
-        </div>
-      </>  
-    )
+  return (
+    <>
+      <Introduce name="Play" />
+      <div className="game row">
+        <Game gameLink={D.TynkerEducation.Game1.gameLink} name = {D.TynkerEducation.Game1.name} />
+        <Game gameLink={D.TynkerEducation.Game2.gameLink} name = {D.TynkerEducation.Game2.name}/>
+        <Game gameLink={D.TynkerEducation.Game3.gameLink} name = {D.TynkerEducation.Game3.name}/>
+        <Game gameLink={D.TynkerEducation.Game4.gameLink} name = {D.TynkerEducation.Game4.name} />
+        <Game gameLink={D.TynkerEducation.Game5.gameLink} name = {D.TynkerEducation.Game5.name}/>
+        <Game gameLink={D.TynkerEducation.Game6.gameLink} name = {D.TynkerEducation.Game6.name}/>
+        <Game gameLink={D.TynkerEducation.Game7.gameLink} name = {D.TynkerEducation.Game7.name}/>
+        <Game gameLink={D.TynkerEducation.Game8.gameLink} name = {D.TynkerEducation.Game8.name}/>
+      </div>
+    </>
+  )
 }
 
 export default PlayGame
