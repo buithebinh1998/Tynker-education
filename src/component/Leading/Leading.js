@@ -12,14 +12,6 @@ const Leading = () => (
           <h2 className="ftco-animate">
             TynkerEdu - học lập trình trực quan đơn giản và thú vị.
           </h2>
-          <div className="video d-flex justify-content-center">
-            <a
-              href="https://vimeo.com/45830194"
-              className="button popup-vimeo d-flex justify-content-center align-items-center"
-            >
-              <span className="ion-ios-play" />
-            </a>
-          </div>
         </div>
       </div>
     </div>
