@@ -36,5 +36,10 @@ export default {
         gameLink: "5dd7d80a7b598618b6430bff&controls=false&autostart=false",
         name: "Phi thuyền" 
       },
+      Introduce: {
+        Image_Tynker: "1EYZnqG-1HGtyjja77ei1yWWbHHgluBY5",
+        Image_Steam_Tynker: "1ZIq4MClRekWzcL5uZV4eIIx8hiT172WY",
+        Image_Steam: "1ot7Bp1BFjYySpWlVJesFh-3_9hBq3ymW"
+      }
     }
 }

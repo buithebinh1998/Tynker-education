@@ -1,11 +1,10 @@
 import React from "react"
-import Loader from '../Loader/Loader'
 import InformationGV from "./InformationGV";
 const GiaoVien = props => {
   const { data, loading } = props
 
   const renderData = data => data.map((item, idx) => {
-    return <InformationGV item ={item} idx ={idx}/>
+    return <InformationGV item ={item} idx ={idx} loading = {loading}/>
   })
 
   return (
@@ -16,7 +15,7 @@ const GiaoVien = props => {
             <h2 className="mb-4">Những giáo viên của chúng tôi</h2>
           </div>
         </div>
-        <div className="row">{loading ? <Loader /> : renderData(data)}</div>
+        <div className="row">{renderData(data)}</div>
       </div>
     </section>
   )
