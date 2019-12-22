@@ -40,8 +40,8 @@ const Game = props => {
           width={loadGame ? '0' : '100%'}
           height="400"
           src={`//www.tynker.com/ide/embedded?p=${gameLink}`}
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
           onLoad={handleLoadGame}
           title={gameLink}
         ></iframe>

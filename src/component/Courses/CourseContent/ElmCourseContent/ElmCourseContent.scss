@@ -1,5 +1,7 @@
 .curriculum-header-title {
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02rem;
@@ -64,6 +66,9 @@
 
   .cover-lectures-container.toggleClass {
     opacity: 0;
+    a {
+      pointer-events: none;
+    }
   }
 
   .lecture-container {
@@ -94,7 +99,7 @@
         margin-right: 10px;
 
         span {
-          transition: .3s all ease;
+          transition: 0.3s all ease;
           color: #167ce9;
         }
       }
@@ -114,8 +119,7 @@
   }
 }
 
-
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .curriculum-header-title {
     font-size: 27px;
     flex: 1;

@@ -1,26 +1,26 @@
 import React from 'react'
-import { Document, Page } from "react-pdf";
+import { Document, Page } from 'react-pdf'
 import ContentLoader from 'react-content-loader'
 import './VideoCourse.scss'
 import pre from '../../../../assets/icon/chevron-right.svg'
 import next from '../../../../assets/icon/chevron-left.svg'
 const options = {
   cMapUrl: 'cmaps/',
-  cMapPacked: true,
+  cMapPacked: true
 }
 
 class VideoCourse extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       numPages: null,
       pageNumber: 1,
       visibleLeft: '',
-      visibleRight: '',
+      visibleRight: ''
     }
   }
 
-   MyLoader = () => (
+  MyLoader = () => (
     <ContentLoader
       height={220}
       speed={1}
@@ -43,12 +43,11 @@ class VideoCourse extends React.Component {
     if (this.state.pageNumber === 1) {
       this.setState({ visibleLeft: 'hide', visibleRight: '' })
     }
-
   }
 
   goToNextPage = () => {
     if (this.state.pageNumber !== this.state.numPages) {
-      this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
+      this.setState(state => ({ pageNumber: state.pageNumber + 1 }))
       this.setState({ visibleRight: '', visibleLeft: '' })
     }
     if (this.state.pageNumber === this.state.numPages) {
@@ -56,40 +55,37 @@ class VideoCourse extends React.Component {
     }
   }
   render() {
-    const { pageNumber, numPages, visibleLeft, visibleRight } = this.state;
-    const {page} = this.props;
+    const { pageNumber, numPages, visibleLeft, visibleRight } = this.state
+    const { page } = this.props
     return (
       <div className="video-background">
         <div className="Example__container">
-
-          <div className="Example__container__document"  >
+          <div className="Example__container__document">
+            <div onClick={this.goToPrevPage} className={`${visibleLeft}`}>
+              <img alt="img" src={next} />
+            </div>
             <Document
               options={options}
               file={page.pdf}
               onLoadSuccess={this.onDocumentLoadSuccess}
-              loading = {this.MyLoader}
+              loading={this.MyLoader}
             >
-              <Page pageNumber={pageNumber} top='0' left='0' />
+              <Page pageNumber={pageNumber} top="0" left="0" />
             </Document>
+            <div onClick={this.goToNextPage} className={`${visibleRight}`}>
+              <img alt="img" src={pre} />
+            </div>
           </div>
-          <div className="Example__container__load" >
+          <div className="Example__container__load">
             <nav>
-              <div onClick={this.goToPrevPage} className={`${visibleLeft}`}>
-                <img alt='img' src={next} style={{ width: '40px' }} />
-              </div>
-
               <div>
                 <p style={{ marginTop: '5px', fontWeight: 'bold' }}>
                   Page {pageNumber} of {numPages}
                 </p>
               </div>
-              <div onClick={this.goToNextPage} className={`${visibleRight}`}>
-                <img alt='img' src={pre} style={{ width: '40px' }} />
-              </div>
             </nav>
           </div>
         </div>
-
       </div>
     )
   }

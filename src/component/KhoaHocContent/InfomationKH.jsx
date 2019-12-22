@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import {C} from '../../constants/index'
+import { C } from '../../constants/index'
 import ContentLoader from 'react-content-loader'
 const MyLoader = () => (
   <ContentLoader
@@ -21,7 +21,7 @@ const MyLoader = () => (
     <rect x="0" y="590" rx="4" ry="4" width="100%" height="10" />
   </ContentLoader>
 )
-const InfomationKH = props => { 
+const InfomationKH = props => {
   const { item, idx, loading } = props
   const [loadImageKH, setLoadImageKH] = React.useState(true)
   const handleLoadImage = () => {
@@ -29,12 +29,11 @@ const InfomationKH = props => {
   }
   return (
     <div className="col-md-4 d-flex ftco-animate" key={idx}>
-        
       <div className="course">
-      {loading || loadImageKH ? <MyLoader /> : C.EMPTY_STRING}
+        {loading || loadImageKH ? <MyLoader /> : C.EMPTY_STRING}
         <img
           alt={item.imgLink}
-          className={`${loadImageKH? "hide-img" : "show-img"}`}
+          className={`${loadImageKH ? 'hide-img' : 'show-img'}`}
           src={`https://drive.google.com/uc?export=view&id=${item.imgLink}`}
           onLoad={handleLoadImage}
         />{' '}
@@ -48,6 +47,14 @@ const InfomationKH = props => {
               <NavLink to="/">{item.name}</NavLink>
             </h3>
             <p align="justify">{item.description}</p>
+            <p>
+              <NavLink
+                to="/learn"
+                className={`btn btn-primary ${idx>0? "disabled": C.EMPTY_STRING}`}
+              >
+                Bắt đầu khóa học!
+              </NavLink>
+            </p>
           </div>
         ) : (
           C.EMPTY_STRING
