@@ -41,8 +41,8 @@ export default {
       name: 'Hứng táo'
     },
     Introduce: {
-      Image_Tynker: '1EYZnqG-1HGtyjja77ei1yWWbHHgluBY5',
-      Image_Steam_Tynker: '1ZIq4MClRekWzcL5uZV4eIIx8hiT172WY',
+      Image_Tynker: '12BtUhcDMEeAaPbb99ReTLet40D6baF7R',
+      Image_Steam_Tynker: '1IAKop5DsS-4qkfondXpydkf1ULK-WRNg',
       Image_Steam: '1ot7Bp1BFjYySpWlVJesFh-3_9hBq3ymW'
     },
     Course: [
