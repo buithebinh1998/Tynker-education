@@ -31,7 +31,7 @@ const LienHe = () => {
             </div>
             <div className="col-md-3">
               <p>
-                <span>Website</span> <a href="http://tynker.herokuapp.com">tynker.herokuapp.com</a>
+                <span>Website</span> <a href="https://tynkerdhsp.firebaseapp.com/">tynkerdhsp.firebaseapp.com</a>
               </p>
             </div>
           </div>

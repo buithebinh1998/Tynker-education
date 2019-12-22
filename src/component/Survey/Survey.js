@@ -9,32 +9,32 @@ const Survey = (props) => (
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
                 <div className="text">
-                  <strong className="number" data-number={10300}>0</strong>
-                  <span>Satisfied Students</span>
+                  <strong className="number" data-number={10300}>54</strong>
+                  <span>Học viên hài lòng</span>
                 </div>
               </div>
             </div>
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
                 <div className="text">
-                  <strong className="number" data-number={7896}>0</strong>
-                  <span>Courses Completed</span>
+                  <strong className="number" data-number={7896}>89</strong>
+                  <span>Khóa học hoàn tất</span>
                 </div>
               </div>
             </div>
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
                 <div className="text">
-                  <strong className="number" data-number={400}>0</strong>
-                  <span>Experts Advisors</span>
+                  <strong className="number" data-number={400}>6</strong>
+                  <span>Giáo viên chuyên môn cao</span>
                 </div>
               </div>
             </div>
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
                 <div className="text">
-                  <strong className="number" data-number={200}>0</strong>
-                  <span>Schools</span>
+                  <strong className="number" data-number={200}>10</strong>
+                  <span>Trường học</span>
                 </div>
               </div>
             </div>
