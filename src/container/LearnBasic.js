@@ -8,7 +8,6 @@ const KhoaHocBasic = props => {
   const [data, setData] = React.useState([])
   const [loading, setLoading] = React.useState(true)
   const { page } = props
-  console.log(props.match.params)
   useEffect(() => {
     let isSubscribed = true
     axios

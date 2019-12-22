@@ -3,14 +3,14 @@ import Introduce from '../component/Introduce/Introduce';
 import Survey from '../component/Survey/Survey';
 import Leading from '../component/Leading/Leading';
 import StudentSay from '../component/StudentSay/StudentSay';
+import Image from '../component/ImageIntroduction/ImageIntroduction';
+import D from '../constants/dictionary';
 const GioiThieu = (props) => {
   const renderInformation = () => (
     <section className="ftco-section">
     <div className="container">
       <div className="row d-flex">
-        <div className="col-md-6 d-flex ftco-animate">
-          <div className="img img-about align-self-stretch" style={{backgroundImage: 'url(images/bg_3.jpg)', width: '100%'}} />
-        </div>
+          <Image imgLink = {D.TynkerEducation.Introduce.Image_Tynker} />
         <div className="col-md-6 pl-md-5 ftco-animate">
           <h2 className="mb-4">Giới thiệu về Tynker</h2>
           <p>
@@ -20,7 +20,9 @@ const GioiThieu = (props) => {
           Tynker dựa trên HTML5 và JavaScript và có thể được sử dụng trong trình duyệt mà không cần plugin, cũng như trên máy tính bảng và điện thoại thông minh. </p>
           <p>Tynker được sử dụng đào tạo phổ biến tại các trường học trên toàn thế giới, học sinh có thể sáng tạo ra các sản phẩm phần mềm, các ứng dụng, câu chuyện, trò chơi của chính mình. 
           Khi trẻ em sáng tạo cùng Tynker, các em sẽ học được cách suy nghĩ sáng tạo, làm việc cộng tác, và tư duy thiết kế sản phẩm game, tư duy mô phỏng thế giới thực tế.</p>
-          
+          <br/>
+          <br/>
+          <br/>
         </div>
         <div className="col-md-6 pl-md-5 ftco-animate">
           <h2 className="mb-4">Giới thiệu về STEAM</h2>
@@ -33,12 +35,8 @@ const GioiThieu = (props) => {
           Thay vì như giáo dục STEM truyền thống thì STEAM là một bước cải cách, một bước chuyển mình mới đưa giáo dục tiến bộ và phát triển hơn.
           </p>
         </div>
-        <div className="col-md-6 d-flex ftco-animate">
-          <div className="img img-about align-self-stretch" style={{backgroundImage: 'url(images/bg_3.jpg)', width: '100%'}} />
-        </div>
-        <div className="col-md-6 d-flex ftco-animate">
-          <div className="img img-about align-self-stretch" style={{backgroundImage: 'url(images/bg_3.jpg)', width: '100%'}} />
-        </div>
+        <Image imgLink = {D.TynkerEducation.Introduce.Image_Steam} />
+        <Image imgLink = {D.TynkerEducation.Introduce.Image_Steam_Tynker} />
         <div className="col-md-6 pl-md-5 ftco-animate">
           <h2 className="mb-4">Dạy học Tynker theo định hướng STEAM</h2>
           <p>Để phát huy tối đa tiềm năng mà các ngôn ngữ lập trình trực quan đem lại, chúng ta cần có một phương thức giáo dụng đúng đắn và phù hợp. 

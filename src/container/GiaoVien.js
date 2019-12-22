@@ -9,7 +9,7 @@ const GiaoVien = () => {
   useEffect(() => {
     let isSubscribed = true
     axios
-      .get('http://tynkerserver.herokuapp.com/tynkerdhsp/teacher')
+      .get('https://tynkerserver.herokuapp.com/tynkerdhsp/teacher')
       .then(res => {
         if (isSubscribed) {
           setData(res.data)

@@ -10733,7 +10733,7 @@ h5,
 }
 
 .slider-text h1 {
-  font-size: 60px;
+  font-size: 2rem;
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
@@ -10741,7 +10741,7 @@ h5,
 
 @media (max-width: 991.98px) {
   .slider-text h1 {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 
@@ -11242,13 +11242,42 @@ h5,
   margin-bottom: 15px;
 }
 
-.staff .img {
+.staff .show-img {
   width: 110px;
   height: 105px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+.staff .hide-img{
+  height: 0;
+  width: 110px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.staff2 .info {
+  width: calc(100% - 110px);
+}
+
+.staff2 .info h3 {
+  font-size: 20px;
+}
+
+.staff2 .info h3 a {
+  color: #167ce9;
+}
+
+.staff2 .info span.position {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.staff2 .img {
+  width: 400px;
+  height: 105px;
 }
 
 .ftco-social a {
@@ -11297,7 +11326,7 @@ h5,
 }
 
 .course {
-  border: 1px solid #f5f7f9;
+  padding: 25px;
   background: #fff;
   -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
@@ -11309,10 +11338,19 @@ h5,
     margin-bottom: 30px;
   }
 }
-
+.course .hide-img{
+  opacity: 0;
+  height: 0;
+  width: 350px;
+}
+.course .show-img{
+  opacity: 1;
+height: 440px;  
+width: 350px;
+}
 .course .img {
-  display: block;
-  height: 283px;
+  height: 0;
+  width: 350px;
 }
 
 .course .text h3 {
@@ -11344,7 +11382,13 @@ h5,
   color: #fff;
   padding: 3em 0;
 }
-
+.introduce .hide{
+  opacity: 0;
+}
+.introduce .img {
+  height: 100%;
+  width: 350px;
+}
 .ftco-freeTrial h3 {
   color: #1b212c;
 }

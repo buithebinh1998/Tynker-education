@@ -68,7 +68,7 @@
     }
     nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 
@@ -80,12 +80,36 @@
     position: relative;
     .Example__container__load {
       z-index: 10;
-      .hide {
-        pointer-events: none;
-        opacity: 0.5;
-      }
     }
   }
+}
+
+.Example__container__document {
+  display: flex;
+  align-items: center;
+  .hide {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  > div:nth-child(odd) {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  > div:nth-child(even) {
+    width: 100%;
+  }
+  .left{
+    left: -10px;
+    position: absolute;
+    z-index: 100;
+  }
+  .right{
+    right: -10px;
+    position: absolute;
+    z-index: 100;
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -99,10 +123,16 @@
     width: 100% !important;
     height: 600px !important;
   }
+  .Example__container__document > div:nth-child(odd) {
+    width: 5%;
+  }
 }
 
 @media (min-width: 1200px) {
   .video-background canvas.react-pdf__Page__canvas {
     height: 900px !important;
+  }
+  .Example__container__document > div:nth-child(odd) img{
+    width: 40px;
   }
 }

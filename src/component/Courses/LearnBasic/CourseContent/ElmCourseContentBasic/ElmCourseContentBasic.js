@@ -28,12 +28,12 @@ class ElmCourseContentBasic extends React.Component {
       plusMinus = plus
       toggleClass = 'toggleClass'
       lecture = ''
-      toggleExpand = 'Expand all'
+      toggleExpand = 'Mở rộng'
     } else {
       plusMinus = minus
       toggleClass = ''
       lecture = 'lecture'
-      toggleExpand = 'Collapse all'
+      toggleExpand = 'Thu nhỏ'
     }
 
     return (
@@ -72,7 +72,7 @@ class ElmCourseContentBasic extends React.Component {
                 <span className="section-title-wrapper">
                   <span className="section-title-toggle">
                     <span>
-                      <img alt="icon" src={plusMinus} />
+                    <img alt="icon" src={plusMinus} />
                     </span>
                   </span>
 

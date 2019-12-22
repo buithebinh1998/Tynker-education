@@ -44,7 +44,7 @@ export const register = (email, password, history, resetForm) => {
         } else {
           swal({
             title: "Done!",
-            text: "Create Account Successfully!",
+            text: "Đăng ký thành công!",
             icon: "success",
             timer: 2000,
             button: false
@@ -67,11 +67,7 @@ export const auth = (email, password, history, resetForm) => {
       password
     })
       .then(res => {
-        console.log("TCL: auth -> res", res)
-        console.log(res.data)
         if (res.data.error) {
-          console.log(res.data.error)
-          console.log('failed2')
           swal({
             title: "Error!",
             text: res.data.error,
@@ -82,15 +78,16 @@ export const auth = (email, password, history, resetForm) => {
         } else {
           const { token } = res.data;
           const userId = jwtDecode(token)._id;
+          localStorage.setItem("userToken", token);
           dispatch(authSuccess(token, userId));
           swal({
             title: "Done!",
-            text: "Login Successfully!",
+            text: "Đăng nhập thành công!",
             icon: "success",
             timer: 2000,
             button: false
           });
-          history.push('/learn')
+          history.push("/");
           resetForm();
         }
       })
@@ -116,7 +113,7 @@ export const logout = () => {
   localStorage.removeItem("userId");
   swal({
     title: "Done!",
-    text: "Logout Successfully!",
+    text: "Đăng xuất thành công!",
     icon: "success",
     timer: 1500,
     button: false
