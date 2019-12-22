@@ -59,7 +59,7 @@ class ElmCourseContentBasic extends React.Component {
                   {toggleExpand}
                 </div>
               </span>
-              <span className="curriculum-header-length">04:45:42</span>
+              <span className="curriculum-header-length">08:30:00</span>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ class ElmCourseContentBasic extends React.Component {
                 <span className="section-title-wrapper">
                   <span className="section-title-toggle">
                     <span>
-                      <img alt="icon" src={plusMinus} />
+                    <img alt="icon" src={plusMinus} />
                     </span>
                   </span>
 
@@ -83,7 +83,7 @@ class ElmCourseContentBasic extends React.Component {
                 <span className={`num-items-in-section ${lecture}`}>
                   5 lectures
                 </span>
-                <span className="section-header-length">07:53</span>
+                <span className="section-header-length">08:30:00</span>
               </div>
             </div>
           </div>

@@ -20,6 +20,11 @@
   justify-content: space-between;
 
   span {
+    >div{
+      font-weight: bold;
+      font-size: 17px;
+      color:#007791;
+    }
     a {
       color: gray;
       margin-right: 10px;

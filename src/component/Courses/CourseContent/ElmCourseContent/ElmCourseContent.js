@@ -61,7 +61,7 @@ class ElmCourseContent extends React.Component {
                 </div>
               </span>
               <span className="dib">5 bài học</span>
-              <span className="curriculum-header-length">04:45:42</span>
+              <span className="curriculum-header-length">08:30:00</span>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ class ElmCourseContent extends React.Component {
                 <span className={`num-items-in-section ${lecture}`}>
                   4 lectures
                 </span>
-                <span className="section-header-length">07:53</span>
+                <span className="section-header-length">08:30:00</span>
               </div>
             </div>
           </div>

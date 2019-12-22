@@ -4,35 +4,41 @@ import Bai3 from './../assets/pdf/Bai3.pdf'
 import Bai4 from './../assets/pdf/Bai4.pdf'
 import Bai5 from './../assets/pdf/Bai5.pdf'
 
+
+// Bài 1: XIN CHÀO TYNKER (1:45:00)
+// Bài 2: CHUYỂN ĐỘNG CÙNG TYNKER (1:15:00)
+// Bài 3: TYNKER KHÁM PHÁ VŨ TRỤ (2:15:00)
+// Bài 4: SIÊU CẦU THỦ TYNKER (2:00:00)
+// Bài 5: ĐÓN TẾT CÙNG TYNKER (1:15:00)
 export const dataCourse = [
   {
     id: "0",
-    title: 'Bài 1: Xin chào Tynker',
-    time: '2:00',
+    title: 'Bài 1: XIN CHÀO TYNKER',
+    time: '1:45:00',
     pdf: Bai1
   },
   {
     id: "1",
-    title: 'Bài 2: Nhảy cùng Tynker',
-    time: '3:00',
+    title: 'Bài 2: CHUYỂN ĐỘNG CÙNG TYNKER',
+    time: '1:15:00',
     pdf: Bai2
   },
   {
     id: "2",
-    title: 'Bài 3: Tìm hiểu về hệ mặt trời cùng Tynker',
-    time: '5:00',
+    title: 'Bài 3: TYNKER KHÁM PHÁ VŨ TRỤ',
+    time: '2:15:00',
     pdf: Bai3
   },
   {
     id: "3",
-    title: 'Bài 4: Tìm hiểu bóng đá cùng Tynker',
-    time: '4:00',
+    title: 'Bài 4: SIÊU CẦU THỦ TYNKER',
+    time: '2:00:00',
     pdf: Bai4
   },
   {
     id: "4",
-    title: 'Bài 5: Đón Tết cùng Tynker',
-    time: '5:00',
+    title: 'Bài 5: ĐÓN TẾT CÙNG TYNKER ',
+    time: '1:15:00',
     pdf: Bai5
   }
 ]

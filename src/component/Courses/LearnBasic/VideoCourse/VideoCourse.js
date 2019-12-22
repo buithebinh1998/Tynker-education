@@ -61,7 +61,7 @@ class VideoCourse extends React.Component {
       <div className="video-background">
         <div className="Example__container">
           <div className="Example__container__document">
-            <div onClick={this.goToPrevPage} className={`${visibleLeft}`}>
+            <div onClick={this.goToPrevPage} className={`left ${visibleLeft}`}>
               <img alt="img" src={next} />
             </div>
             <Document
@@ -72,7 +72,7 @@ class VideoCourse extends React.Component {
             >
               <Page pageNumber={pageNumber} top="0" left="0" />
             </Document>
-            <div onClick={this.goToNextPage} className={`${visibleRight}`}>
+            <div onClick={this.goToNextPage} className={`right ${visibleRight}`}>
               <img alt="img" src={pre} />
             </div>
           </div>

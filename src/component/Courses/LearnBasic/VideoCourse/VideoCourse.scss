@@ -97,8 +97,19 @@
     justify-content: center;
   }
   > div:nth-child(even) {
-    width: 90%;
+    width: 100%;
   }
+  .left{
+    left: -10px;
+    position: absolute;
+    z-index: 100;
+  }
+  .right{
+    right: -10px;
+    position: absolute;
+    z-index: 100;
+  }
+  
 }
 
 @media (min-width: 768px) {

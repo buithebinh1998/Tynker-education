@@ -11,12 +11,14 @@ const StudentSay = props => (
       <div className="row">
         <div className="col-12 col-md-3 ftco-animate">
           <div className="carousel-testimony owl-carousel">
-            <div className="item">
+            <div className="item"> 
+
               <div className="testimony-wrap text-center">
+              {/* <img src = "abc"  className = "img" alt = "abc"/ > */}
                 <div
                   className="user-img mb-5"
-                  style={{ backgroundImage: 'url(images/person_1.jpg)' }}
                 >
+                 
                   <span className="quote d-flex align-items-center justify-content-center">
                     <i className="icon-quote-left" />
                   </span>

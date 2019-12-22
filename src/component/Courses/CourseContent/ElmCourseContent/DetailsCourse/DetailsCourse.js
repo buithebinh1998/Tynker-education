@@ -15,7 +15,12 @@ const DetailsCourse = props => {
               <img alt="icon" src={play} />
               <div className="top">
                 <div className="title">
-                  <NavLink to={`/learn/basic/${data.id}`}>{data.title}</NavLink>
+                  <NavLink
+                    to={`/learn/basic/${data.id}`}
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    {data.title}
+                  </NavLink>
                 </div>
               </div>
             </div>
