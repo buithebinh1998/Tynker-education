@@ -23,31 +23,37 @@ const WhatULearn = () => {
                   <li className="what-you-get__item what-you-get__item--columns">
                     <img className="iconCheck" alt="icon" src={icon} />
                     <span className="what-you-get__text">
-                    Học sinh sẽ được học theo chương trình bản quyền của Tynker, một nền tảng đào tạo lập trình online được sử dụng đào tạo phổ biến tại các trường học trên toàn thế giới.
+                    Học sinh sẽ được học lập trình trực quan theo chương trình Tin học phổ thông tổng thể mới bằng Tynker, một nền tảng đào tạo lập trình online được sử dụng đào tạo phổ biến tại các trường học trên toàn thế giới.
                     </span>
                   </li>
                   <li className="what-you-get__item what-you-get__item--columns">
                     <img className="iconCheck" alt="icon" src={icon} />
                     <span className="what-you-get__text">
-                    Mỗi học sinh sẽ được cấp tài khoản học tập tại Tynker.com
+                    Phương pháp dạy học STEAM được áp dụng xuyên suốt các bài giảng của khóa học.
                     </span>
                   </li>
                   <li className="what-you-get__item what-you-get__item--columns">
                     <img className="iconCheck" alt="icon" src={icon} />
                     <span className="what-you-get__text">
-                    Trong khoá học, học sinh sẽ được tiếp cận việc học lập trình cùng Minecraft, một sản phẩm giáo dục, vừa học vừa chơi, trong thế giới mở, tạo ra sự hưng phấn học tập và sáng tạo cho mỗi học sinh thông qua việc xây dựng các công trình theo trí tưởng tượng của mình, bằng cách xây các khối kết cấu trong một thế giới 3D như xây dựng thành phố, làng mạc, nhà cửa, tàu chiến, công trình (ví dụ tháp Eiffel, cầu Cổng Vàng, Vạn Lý Trường Thành).
+                    Trong khoá học, học sinh có thể sáng tạo ra các sản phẩm phần mềm, các ứng dụng, câu chuyện, trò chơi của chính mình.
                     </span>
                   </li>
                   <li className="what-you-get__item what-you-get__item--columns">
                     <img className="iconCheck" alt="icon" src={icon} />
                     <span className="what-you-get__text">
-                    Nhờ tính xuyên suốt của Minecraft, các bạn nhỏ sẽ hình thành được tư duy thiết kế, tư duy tổng thể và nâng cao năng lực sáng tạo cho bản thân.
+                    Nhờ tính xuyên suốt của khóa học, các bạn nhỏ sẽ hình thành được tư duy thiết kế, tư duy tổng thể và nâng cao năng lực sáng tạo cho bản thân.
                     </span>
                   </li>
                   <li className="what-you-get__item what-you-get__item--columns">
                     <img className="iconCheck" alt="icon" src={icon} />
                     <span className="what-you-get__text">
-                    Minecraft được Microsoft mua lại với giá 2,5 tỷ USD và hiện đang được sử dụng giảng dạy cho 50 triệu học sinh và 60 nghìn trường trên toàn thế giới.
+                    Các kiến thức khoa học, tự nhiên, xã hội được lồng ghép gây ra hứng thú cho học sinh. 
+                    </span>
+                  </li>
+                  <li className="what-you-get__item what-you-get__item--columns">
+                    <img className="iconCheck" alt="icon" src={icon} />
+                    <span className="what-you-get__text">
+                    Các sản phẩm vừa áp dụng kiến thức tin học, vừa lấy ví dụ cho các kiến thức khoa học, xã hội, tự nhiên học sinh mới được học.
                     </span>
                   </li>
                 </ul>
