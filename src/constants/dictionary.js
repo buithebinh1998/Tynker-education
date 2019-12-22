@@ -40,6 +40,30 @@ export default {
         Image_Tynker: "1EYZnqG-1HGtyjja77ei1yWWbHHgluBY5",
         Image_Steam_Tynker: "1ZIq4MClRekWzcL5uZV4eIIx8hiT172WY",
         Image_Steam: "1ot7Bp1BFjYySpWlVJesFh-3_9hBq3ymW"
+      },
+      Course: [  
+      {
+        lessonLink:"5df673044bd338ab173c4e76",
+        id: "0"
+      },
+      {
+        lessonLink:"5df66df6d3c938774e34550d",
+        id: "1"
+      },
+      {
+        lessonLink:"5df669934bd338a0090a14ae",
+        id: "2"
+      },
+      {
+        lessonLink:"5df6644dd3c9386dbf662fc1",
+        id: "3"
+      },
+      {
+        lessonLink:"5df67df6d3c9388a71396260",
+        id: "4"
+      }    
+    ]
+
+              
       }
     }
-}

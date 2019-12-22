@@ -8,6 +8,14 @@
     width: 100%;
   }
 }
+.height-tynker {
+  min-height: 500px;
+  position: relative;
+  .iframe{
+    position: absolute;
+  }
+}
+
 
 @media (min-width: 1024px) {
   .coverCourseVideo {
@@ -18,5 +26,8 @@
     .down-Video {
       width: 30%;
     }
+  }
+  .height-tynker{
+    min-height: 800px;
   }
 }
