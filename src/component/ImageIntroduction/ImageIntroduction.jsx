@@ -14,7 +14,7 @@ const MyLoader = () => (
   </ContentLoader>
 )
 const ImageIntroduction = props => {
-  const { imgLink } = props
+  const { imgLink,notload } = props
   const [loadImageData, setLoadImageData] = React.useState(true)
   const handleLoadImage = () => {
     setLoadImageData(false)
@@ -24,11 +24,10 @@ const ImageIntroduction = props => {
     
       <div className="col-md-6 d-flex ftco-animate">
         <div className = "introduce">
-        {loadImageData ? <MyLoader /> : C.EMPTY_STRING}
+        {loadImageData && !notload ? <MyLoader /> : C.EMPTY_STRING}
         <img
-          className={`img ${loadImageData ? "hide" : C.EMPTY_STRING}`}
+          className={`${loadImageData ? "hide-img" : "show-img"}`}
           src={`https://drive.google.com/uc?export=view&id=${imgLink}`}
-          style={{ width: '100%' }}
           onLoad={handleLoadImage}
           alt = {imgLink}
         />

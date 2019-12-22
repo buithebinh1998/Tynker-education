@@ -11382,12 +11382,13 @@ width: 350px;
   color: #fff;
   padding: 3em 0;
 }
-.introduce .hide{
+.introduce .hide-img{
   opacity: 0;
+  width: 500px;
 }
-.introduce .img {
+.introduce .show-img {
   height: 100%;
-  width: 350px;
+  width: 100%;
 }
 .ftco-freeTrial h3 {
   color: #1b212c;

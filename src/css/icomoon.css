@@ -2928,6 +2928,13 @@
 .icon-content_paste:before {
   content: "\e14f";
 }
+.icon-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8;
+}
 .icon-control_point_duplicate:before {
   content: "\e3bb";
 }
