@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import play from '../../../../../assets/icon/play-circle.svg'
+import pdf from '../../../../../assets/pdf/EBOOK_TYNKER.pdf'
 import '../ElmCourseContent.scss'
 
 const DetailsCourse = props => {
@@ -29,6 +30,8 @@ const DetailsCourse = props => {
             </div>
           </div>
         ))}
+        <a href={pdf} download>Tài liệu tham khảo</a>
+
       </div>
     </div>
   )
