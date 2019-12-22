@@ -36,6 +36,10 @@ export default {
       gameLink: '5dd7d80a7b598618b6430bff&controls=false&autostart=false',
       name: 'Phi thuyền'
     },
+    Game10: {
+      gameLink: '5dc55cc07b59863303186afb&controls=false&autostart=false',
+      name: 'Hứng táo'
+    },
     Introduce: {
       Image_Tynker: '1EYZnqG-1HGtyjja77ei1yWWbHHgluBY5',
       Image_Steam_Tynker: '1ZIq4MClRekWzcL5uZV4eIIx8hiT172WY',
