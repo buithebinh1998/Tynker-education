@@ -16,7 +16,6 @@ class LearnBasic extends React.Component {
   }
   render() {
     const { page } = this.props
-    console.log(page)
     return (
       <>
         <div className="row coverCourseVideo">

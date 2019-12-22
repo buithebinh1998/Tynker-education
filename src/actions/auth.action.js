@@ -44,7 +44,7 @@ export const register = (email, password, history, resetForm) => {
         } else {
           swal({
             title: "Done!",
-            text: "Create Account Successfully!",
+            text: "Đăng ký thành công!",
             icon: "success",
             timer: 2000,
             button: false
@@ -82,7 +82,7 @@ export const auth = (email, password, history, resetForm) => {
           dispatch(authSuccess(token, userId));
           swal({
             title: "Done!",
-            text: "Login Successfully!",
+            text: "Đăng nhập thành công!",
             icon: "success",
             timer: 2000,
             button: false
@@ -113,7 +113,7 @@ export const logout = () => {
   localStorage.removeItem("userId");
   swal({
     title: "Done!",
-    text: "Logout Successfully!",
+    text: "Đăng xuất thành công!",
     icon: "success",
     timer: 1500,
     button: false
