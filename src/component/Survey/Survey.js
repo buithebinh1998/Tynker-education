@@ -8,6 +8,7 @@ const Survey = (props) => (
           <div className="row">
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
+
                 <div className="text">
                   <strong className="number" data-number={10300}>54</strong>
                   <span>Học viên hài lòng</span>

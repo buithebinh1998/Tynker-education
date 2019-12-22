@@ -45,6 +45,12 @@ export default {
       Image_Steam_Tynker: '1IAKop5DsS-4qkfondXpydkf1ULK-WRNg',
       Image_Steam: '1ot7Bp1BFjYySpWlVJesFh-3_9hBq3ymW'
     },
+    Count:{
+      img_student: '1nbaiMwBQYf4ITPpk5fMr1CevkRFScukA',
+      img_school: '16YX5dOGy3xhAQH3cyYgetJRRvxxtKseU',
+      img_course: '1LmQOPtaTmbPxaLOceXG4PyNhECdrCqKa',
+      img_teacher: '1q_WA0oWIAlSBaAdPC5tvmoEhzT6yttZ5'
+    },
     Course: [
       {
         lessonLink: '5df673044bd338ab173c4e76',
