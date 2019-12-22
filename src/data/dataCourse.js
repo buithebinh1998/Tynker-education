@@ -19,7 +19,11 @@ export const dataCourse = [
   },
   {
     id: "1",
+<<<<<<< HEAD
+    title: 'Bài 2: CHUYỂN ĐỘNG CÙNG TYNKER ',
+=======
     title: 'Bài 2: CHUYỂN ĐỘNG CÙNG TYNKER',
+>>>>>>> dc4e835ce9f8a97b72d3ea3f9c27622c9a7c53b8
     time: '1:15:00',
     pdf: Bai2
   },
@@ -37,7 +41,11 @@ export const dataCourse = [
   },
   {
     id: "4",
+<<<<<<< HEAD
+    title: 'Bài 5: ĐÓN TẾT CÙNG TYNKER',
+=======
     title: 'Bài 5: ĐÓN TẾT CÙNG TYNKER ',
+>>>>>>> dc4e835ce9f8a97b72d3ea3f9c27622c9a7c53b8
     time: '1:15:00',
     pdf: Bai5
   }

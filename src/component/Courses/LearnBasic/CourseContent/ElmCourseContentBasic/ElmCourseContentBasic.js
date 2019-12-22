@@ -76,12 +76,12 @@ class ElmCourseContentBasic extends React.Component {
                     </span>
                   </span>
 
-                  <span className="section-title-text"> Giới thiệu</span>
+                  <span className="section-title-text"> Các bài học</span>
                 </span>
               </div>
               <div className="section-header-right">
                 <span className={`num-items-in-section ${lecture}`}>
-                  5 lectures
+                  5 bài học
                 </span>
                 <span className="section-header-length">08:30:00</span>
               </div>
