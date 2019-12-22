@@ -41,9 +41,15 @@ export default {
       name: 'Hứng táo'
     },
     Introduce: {
-      Image_Tynker: '1EYZnqG-1HGtyjja77ei1yWWbHHgluBY5',
-      Image_Steam_Tynker: '1ZIq4MClRekWzcL5uZV4eIIx8hiT172WY',
+      Image_Tynker: '12BtUhcDMEeAaPbb99ReTLet40D6baF7R',
+      Image_Steam_Tynker: '1IAKop5DsS-4qkfondXpydkf1ULK-WRNg',
       Image_Steam: '1ot7Bp1BFjYySpWlVJesFh-3_9hBq3ymW'
+    },
+    Count:{
+      img_student: '1nbaiMwBQYf4ITPpk5fMr1CevkRFScukA',
+      img_school: '16YX5dOGy3xhAQH3cyYgetJRRvxxtKseU',
+      img_course: '1LmQOPtaTmbPxaLOceXG4PyNhECdrCqKa',
+      img_teacher: '1q_WA0oWIAlSBaAdPC5tvmoEhzT6yttZ5'
     },
     Course: [
       {
