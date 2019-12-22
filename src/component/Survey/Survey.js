@@ -1,5 +1,6 @@
 import React from 'react'
-
+import D from '../../constants/dictionary';
+import Image from '../ImageIntroduction/ImageIntroduction';
 const Survey = (props) => (
   <section className="ftco-counter bg-light" id="section-counter">
     <div className="container">
@@ -8,7 +9,7 @@ const Survey = (props) => (
           <div className="row">
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
-
+              <Image imgLink = {D.TynkerEducation.Count.img_student} />
                 <div className="text">
                   <strong className="number" data-number={10300}>54</strong>
                   <span>Học viên hài lòng</span>
@@ -17,6 +18,7 @@ const Survey = (props) => (
             </div>
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
+              <Image imgLink = {D.TynkerEducation.Count.img_course} />
                 <div className="text">
                   <strong className="number" data-number={7896}>89</strong>
                   <span>Khóa học hoàn tất</span>
@@ -25,6 +27,7 @@ const Survey = (props) => (
             </div>
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
+              <Image imgLink = {D.TynkerEducation.Count.img_teacher} />
                 <div className="text">
                   <strong className="number" data-number={400}>6</strong>
                   <span>Giáo viên chuyên môn cao</span>
@@ -33,6 +36,7 @@ const Survey = (props) => (
             </div>
             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center">
+              <Image imgLink = {D.TynkerEducation.Count.img_school} />
                 <div className="text">
                   <strong className="number" data-number={200}>10</strong>
                   <span>Trường học</span>
