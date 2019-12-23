@@ -73,15 +73,35 @@ export default {
         id: '4'
       }
     ],
-    Student : {
-      imgLink1 : "1DJvuxp6NxiAqHoHiDwMM_Wj7IKa0WlL",
-      imgLink2: "1EL1Xiuqs5ktMe6RmeTzhy9tM2lo_NWO4",
+    Student1 : {
+      imgLink : "1DJvuxp6NxiAqHoHiDwMM_Wj7IKa0WlL",
+      name: "Bùi Hoàng Minh",
+      say: `Em rất cảm ơn TynkerEdu đã cung cấp một khóa học "Tynker cơ bản" cực kì bổ ích. Vừa được tiếp thu kiến thức mới, vừa được trực tiếp thực hành giúp đỡ em rất nhiều trong việc học lập trình. Tôi rất cám ơn đến Tynker Edu!`,
+      role: "Học sinh THCS"
+    },
+    Student2: {
+      imgLink: "1EL1Xiuqs5ktMe6RmeTzhy9tM2lo_NWO4",
+      name: "Trần Anh Phúc",
+      say: `Nhờ có TynkerEdu, em đã biết thêm được rất nhiều kiến thức bổ ích về những cấu trúc mà em không thể hiểu được khi tự tìm hiểu. Em sẽ tiếp tục học Tynker nâng cao để theo đuổi niềm đam mê lập trình của bản thân.`,
+      role: "Học sinh THCS"
     },
     Parents: {
-      imgLink : "1ADtaTJmkBb_4rD9_IcVmHLdsY5xx9K0O"
+      imgLink : "1ADtaTJmkBb_4rD9_IcVmHLdsY5xx9K0O",
+      name: "Lâm Sơn Tùng",
+      say: `Tôi chưa từng hối hận khi đăng ký cho con mình một khóa học
+      ở trang TynkerEdu. Những bài giảng rất hay, kèm theo những
+      ví dụ rất thực tế làm cho con tôi rất hứng thú và đam mê lập
+      trình. Tôi cảm ơn TynkerEdu.`,
+      role: "Phụ huynh"
     },
     Teacher: {
-      imgLink: "18IINvedqc2oF3oYjM6IBlvh9VsiaL13A"
+      imgLink: "18IINvedqc2oF3oYjM6IBlvh9VsiaL13A",
+      name: "Nguyễn Minh Đạt",
+      say: ` Những tài liệu bổ ích cùng những bài giảng tuyệt vời của
+      TynkerEdu đã hun đúc cho tôi những kinh nghiệm quý giá cho
+      việc dạy học lập trình của tôi. Tôi chân thành cảm ơn công
+      sức của các thầy cô.`,
+      role: "Giáo viên"
     }
   }
 }

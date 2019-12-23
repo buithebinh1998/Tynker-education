@@ -9,7 +9,7 @@ const Survey = (props) => (
           <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center icon-content">
-              <Image imgLink = {D.TynkerEducation.Count.img_student} notload = {true} />
+              <Image imgLink = {D.TynkerEducation.Count.img_student} loadicon = {true} />
                 <div className="text">
                   <strong className="number" data-number={10300}>54</strong>
                   <span>Học viên hài lòng</span>
@@ -18,7 +18,7 @@ const Survey = (props) => (
             </div>
             <div className="col-xl-3 col-lg-4 col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center icon-content">
-              <Image imgLink = {D.TynkerEducation.Count.img_course}  notload = {true}/>
+              <Image imgLink = {D.TynkerEducation.Count.img_course}  loadicon = {true}/>
                 <div className="text">
                   <strong className="number" data-number={7896}>89</strong>
                   <span>Khóa học hoàn tất</span>
@@ -27,7 +27,7 @@ const Survey = (props) => (
             </div>
             <div className="col-xl-3 col-lg-4 col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center icon-content">
-              <Image imgLink = {D.TynkerEducation.Count.img_teacher}  notload = {true}/>
+              <Image imgLink = {D.TynkerEducation.Count.img_teacher}  loadicon = {true}/>
                 <div className="text">
                   <strong className="number" data-number={400}>6</strong>
                   <span>Giáo viên chuyên môn cao</span>
@@ -36,7 +36,7 @@ const Survey = (props) => (
             </div>
             <div className="col-xl-3 col-lg-4 col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
               <div className="block-18 text-center icon-content">
-              <Image imgLink = {D.TynkerEducation.Count.img_school} notload ={true} />
+              <Image imgLink = {D.TynkerEducation.Count.img_school} loadicon ={true} />
                 <div className="text">
                   <strong className="number" data-number={200}>10</strong>
                   <span>Trường học</span>

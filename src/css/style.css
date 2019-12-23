@@ -11386,10 +11386,19 @@ width: 350px;
   opacity: 0;
   width: 500px;
 }
+.introduce .hide-icon {
+  opacity: 0;
+  height: 0;
+  width: 400px;
+}
+.introduce .show-icon{
+  width: 100%;
+}
 .introduce .show-img {
   height: 100%;
   width: 100%;
 }
+.introduce
 .ftco-freeTrial h3 {
   color: #1b212c;
 }
