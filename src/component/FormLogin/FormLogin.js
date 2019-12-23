@@ -35,7 +35,7 @@ const FormLogin = (props) => {
   return (
     <>
       {authRedirect}
-      <div className="hero-wrap hero-wrap-2">
+      <div className="hero-wrap hero-wrap-3">
         <div className="overlay" />
         <div className="container">
           <div className="row no-gutters" data-scrollax-parent="true" />
@@ -74,13 +74,13 @@ const FormLogin = (props) => {
                     Đăng nhập
                     </button>
                   <div className="text-center">
-                    <span className="txt1">Create an account?</span>
+                    <span className="txt1">Tạo tài khoản ?</span>
                     <NavLink
                       to="/dangky"
                       className="txt2 hov1"
                       activeClassName="active"
                     >
-                      Sign up
+                      Đăng ký
                 </NavLink>
                   </div>
                 </form>

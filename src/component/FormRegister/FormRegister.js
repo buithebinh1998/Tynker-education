@@ -30,7 +30,7 @@ const FormRegister = (props) => {
   const { values, touched, errors, handleSubmit } = props;
 
   return (
-    <div className="hero-wrap hero-wrap-2">
+    <div className="hero-wrap hero-wrap-3">
       <div className="overlay" />
       <div className="container">
         <div
@@ -105,13 +105,6 @@ const FormRegister = (props) => {
     </div>
   )
 }
-
-// const handleSubmit = values => {
-//   const data = { email: values.email, password: values.password }
-//   API.post('/signup', data)
-//     .then(res => console.log(res))
-//     .catch(err => alert(err))
-// }
 
 const EnhanceForm = withFormik({
   enableReinitialize: true,

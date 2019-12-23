@@ -74,7 +74,7 @@ export default {
       }
     ],
     Student1 : {
-      imgLink : "1DJvuxp6NxiAqHoHiDwMM_Wj7IKa0WlL",
+      imgLink : "1DJvuxp6NxiAqHoHiDwMM_Wj7IKa0WlL-",
       name: "Bùi Hoàng Minh",
       say: `Em rất cảm ơn TynkerEdu đã cung cấp một khóa học "Tynker cơ bản" cực kì bổ ích. Vừa được tiếp thu kiến thức mới, vừa được trực tiếp thực hành giúp đỡ em rất nhiều trong việc học lập trình. Tôi rất cám ơn đến Tynker Edu!`,
       role: "Học sinh THCS"
@@ -86,7 +86,7 @@ export default {
       role: "Học sinh THCS"
     },
     Parents: {
-      imgLink : "1ADtaTJmkBb_4rD9_IcVmHLdsY5xx9K0O",
+      imgLink : "1-MK-E6Db-Ubq745pP_kqRNKh1wsSFn2Z",
       name: "Lâm Sơn Tùng",
       say: `Tôi chưa từng hối hận khi đăng ký cho con mình một khóa học
       ở trang TynkerEdu. Những bài giảng rất hay, kèm theo những

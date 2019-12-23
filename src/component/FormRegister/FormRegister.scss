@@ -63,7 +63,12 @@
     background: #0b4379;
     box-shadow: 0px 2px 1px rgba(28, 28, 29, 0.42);
 	border-radius: 22px;
-	
+    
+}
+.signin-form button[type="submit"]:disabled {
+    cursor: none;
+    background: #ccc;
+    
 }
 .signin-form input[type="submit"]:hover {
     color: #fff;

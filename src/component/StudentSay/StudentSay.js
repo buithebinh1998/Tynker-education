@@ -1,5 +1,6 @@
 import React from 'react'
-
+import D from '../../constants/dictionary'
+import ImageStudent from '../ImageStudent/ImageStudent'
 const StudentSay = props => (
   <section className="ftco-section testimony-section">
     <div className="container">
@@ -9,112 +10,30 @@ const StudentSay = props => (
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-md-3 ftco-animate">
-          <div className="carousel-testimony owl-carousel">
-            <div className="item"> 
-
-              <div className="testimony-wrap text-center">
-              {/* <img src = "abc"  className = "img" alt = "abc"/ > */}
-                <div
-                  className="user-img mb-5"
-                >
-                 
-                  <span className="quote d-flex align-items-center justify-content-center">
-                    <i className="icon-quote-left" />
-                  </span>
-                </div>
-                <div className="text">
-                  <p className="mb-5">
-                    Em rất cảm ơn TynkerEdu đã cung cấp một khóa học "Tynker cơ
-                    bản" cực kì bổ ích. Vừa được tiếp thu kiến thức mới, vừa
-                    được trực tiếp thực hành giúp đỡ em rất nhiều trong việc học
-                    lập trình. Tôi rất cám ơn đến Tynker Edu!
-                  </p>
-                  <p className="name">Bùi Hoàng Minh</p>
-                  <span className="position">Học sinh THCS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-md-3 ftco-animate">
-          <div className="carousel-testimony owl-carousel">
-            <div className="item">
-              <div className="testimony-wrap text-center">
-                <div
-                  className="user-img mb-5"
-                  style={{ backgroundImage: 'url(images/person_2.jpg)' }}
-                >
-                  <span className="quote d-flex align-items-center justify-content-center">
-                    <i className="icon-quote-left" />
-                  </span>
-                </div>
-                <div className="text">
-                  <p className="mb-5">
-                    Nhờ có TynkerEdu, em đã biết thêm được rất nhiều kiến thức
-                    bổ ích về những cấu trúc mà em không thể hiểu được khi tự
-                    tìm hiểu. Em sẽ tiếp tục học "Tynker nâng cao" để
-                    theo đuổi niềm đam mê lập trình của bản thân.
-                  </p>
-                  <p className="name">Trần Anh Phúc</p>
-                  <span className="position">Học sinh THCS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-md-3 ftco-animate">
-          <div className="carousel-testimony owl-carousel">
-            <div className="item">
-              <div className="testimony-wrap text-center">
-                <div
-                  className="user-img mb-5"
-                  style={{ backgroundImage: 'url(images/person_3.jpg)' }}
-                >
-                  <span className="quote d-flex align-items-center justify-content-center">
-                    <i className="icon-quote-left" />
-                  </span>
-                </div>
-                <div className="text">
-                  <p className="mb-5">
-                    Tôi chưa từng hối hận khi đăng ký cho con mình một khóa học
-                    ở trang TynkerEdu. Những bài giảng rất hay, kèm theo những
-                    ví dụ rất thực tế làm cho con tôi rất hứng thú và đam mê lập
-                    trình. Tôi cảm ơn TynkerEdu.
-                  </p>
-                  <p className="name">Lâm Sơn Tùng</p>
-                  <span className="position">Phụ huynh</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-md-3 ftco-animate">
-          <div className="carousel-testimony owl-carousel">
-            <div className="item">
-              <div className="testimony-wrap text-center">
-                <div
-                  className="user-img mb-5"
-                  style={{ backgroundImage: 'url(images/person_3.jpg)' }}
-                >
-                  <span className="quote d-flex align-items-center justify-content-center">
-                    <i className="icon-quote-left" />
-                  </span>
-                </div>
-                <div className="text">
-                  <p className="mb-5">
-                    Những tài liệu bổ ích cùng những bài giảng tuyệt vời của
-                    TynkerEdu đã hun đúc cho tôi những kinh nghiệm quý giá cho
-                    việc dạy học lập trình của tôi. Tôi chân thành cảm ơn công
-                    sức của các thầy cô.
-                  </p>
-                  <p className="name">Nguyễn Minh Đạt</p>
-                  <span className="position">Giáo viên</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ImageStudent
+          name={D.TynkerEducation.Student1.name}
+          say={D.TynkerEducation.Student1.say}
+          role={D.TynkerEducation.Student1.role}
+          imgLink={D.TynkerEducation.Student1.imgLink}
+        />
+        <ImageStudent
+          name={D.TynkerEducation.Student2.name}
+          say={D.TynkerEducation.Student2.say}
+          role={D.TynkerEducation.Student2.role}
+          imgLink={D.TynkerEducation.Student2.imgLink}
+        />
+        <ImageStudent
+          name={D.TynkerEducation.Parents.name}
+          say={D.TynkerEducation.Parents.say}
+          role={D.TynkerEducation.Parents.role}
+          imgLink={D.TynkerEducation.Parents.imgLink}
+        />
+        <ImageStudent
+          name={D.TynkerEducation.Teacher.name}
+          say={D.TynkerEducation.Teacher.say}
+          role={D.TynkerEducation.Teacher.role}
+          imgLink={D.TynkerEducation.Teacher.imgLink}
+        />
       </div>
     </div>
   </section>

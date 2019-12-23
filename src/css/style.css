@@ -10705,7 +10705,14 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 {
-  height: 600px;
+  display: flex;
+    align-items: center;
+    height: 40vh;
+}
+.hero-wrap.hero-wrap-3 {
+  display: flex;
+  align-items: center;
+  height: 55vh;
 }
 
 .hero-wrap .overlay {
@@ -10733,7 +10740,7 @@ h5,
 }
 
 .slider-text h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
@@ -10762,7 +10769,7 @@ h5,
 
 .slider-text .breadcrumbs {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   margin-bottom: 20px;
   z-index: 99;
@@ -11390,6 +11397,9 @@ width: 350px;
   opacity: 0;
   height: 0;
   width: 400px;
+}
+.testimony-wrap .img {
+  width: 100%;
 }
 .introduce .show-icon{
   width: 100%;

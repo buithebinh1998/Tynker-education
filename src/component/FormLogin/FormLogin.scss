@@ -77,6 +77,11 @@
   border-radius: 22px;
 
 }
+.signin-form button[type="submit"]:disabled {
+  cursor: none;
+  background: #ccc;
+  
+}
 
 .signin-form input[type="submit"]:hover {
   color: #fff;
@@ -177,9 +182,9 @@ h5 {
 }
 
 .hero-wrap.hero-wrap-2 {
-  height: 600px;
   display: flex;
   align-items: center;
+  height: 40vh;
 }
 
 .Invalid {

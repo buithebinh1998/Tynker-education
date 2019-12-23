@@ -32,7 +32,6 @@ export const register = (email, password, history, resetForm) => {
       password
     })
       .then(res => {
-        console.log(res)
         if (res.data.error) {
           swal({
             title: "Error!",

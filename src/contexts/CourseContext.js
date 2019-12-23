@@ -19,7 +19,6 @@ const CourseContextProvider = props => {
       .catch(err => console.log(err))
     dispatch({ type: 'SET', payload: dataAPI })
   })
-  // console.log(data);
 
   return (
     <CourseContext.Provider value={{ data, dispatch }}>
